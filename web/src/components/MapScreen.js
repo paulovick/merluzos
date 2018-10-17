@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Button } from 'semantic-ui-react'
 import MapContainer from './MapContainer'
 import { openFiltersScreen } from '../actions'
+import { COLORS } from '../constants'
 
 class MapScreen extends Component {
   onSearchClick() {
@@ -14,7 +15,7 @@ class MapScreen extends Component {
       fabContainerStyle,
       fabStyle
     } = style
-
+    console.log(COLORS)
     return (
       <div>
         <MapContainer />

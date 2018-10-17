@@ -1,20 +1,40 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import { Button } from 'semantic-ui-react'
+import { CenteredContainer } from './common'
+import { FilterInput } from './common'
+import { COLORS } from '../constants'
 
 class FilterScreen extends Component {
   render() {
-    const { containerStyle, outerContainerStyle, middleContainerStyle, innerContainerStyle } = styles
+    const {
+      containerStyle,
+      choiceButtonContainerStyle,
+      choiceButtonStyle
+    } = styles
 
+    const walkBackgroundColor = COLORS.Dark
+    const bikeBackgroundColor = COLORS.Neutral
     return (
       <div style={containerStyle}>
-        <div style={outerContainerStyle}>
-          <div style={middleContainerStyle}>
-            <div style={innerContainerStyle}>
-              <p>Centrered</p>
-            </div>
+        <CenteredContainer>
+          <div>
+            <Button.Group size="huge" style={choiceButtonContainerStyle}>
+              <Button style={{...choiceButtonStyle, backgroundColor: walkBackgroundColor}}
+                      icon="male"/>
+              <Button.Or />
+              <Button style={{...choiceButtonStyle, backgroundColor: bikeBackgroundColor}}
+                      icon="bicycle"/>
+            </Button.Group>
           </div>
-        </div>
+
+          <FilterInput placeholder="From..." />
+
+          <FilterInput placeholder="To..." />
+
+          <div></div>
+          <div></div>
+        </CenteredContainer>
       </div>
     )
   }
@@ -27,27 +47,16 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'white'
+    backgroundColor: COLORS.Dark
   },
-  outerContainerStyle: {
-    position: 'absolute',
-    display: 'table',
-    height: '100%',
-    width: '100%'
+  choiceButtonContainerStyle: {
+    width: '80%',
+    marginBottom: 30
   },
-  middleContainerStyle: {
-    display: 'table-cell',
-    verticalAlign: 'middle'
-  },
-  innerContainerStyle: {
-    display: 'block',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginTop: 'auto',
-    marginBottom: 'auto',
-    textAlign: 'center',
-    backgroundColor: 'red',
-    width: '80%'
+  choiceButtonStyle: {
+    backgroundColor: COLORS.Dark,
+    color: COLORS.LightText,
+    border: '1px solid rgba(0, 0, 0, 0.2)'
   }
 }
 
