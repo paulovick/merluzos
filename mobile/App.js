@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import MapView from 'react-native-maps';
 
 export default class App extends React.Component {
   render() {
@@ -14,14 +13,6 @@ export default class App extends React.Component {
         </View>
 
         <View style={mapStyle}>
-          {/* <MapView
-            initialRegion={{
-              latitude: 37.78825,
-              longitude: -122.4324,
-              latitudeDelta: 0.0922,
-              longitudeDelta: 0.0421,
-            }}
-          /> */}
           <Text>New text</Text>
         </View>
       </View>
