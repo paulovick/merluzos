@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React from 'react'
+import _ from 'lodash'
 
 
 class Point {
@@ -58,7 +59,6 @@ class RoutingService {
 
     getRoutes(from, to, transport) {
         const url = this.buildRouteUrl(from, to, transport);
-        console.log(url)
         return fetch(url)
             .then(this.checkStatus)
             .then(res => res.json())
@@ -68,7 +68,6 @@ class RoutingService {
                     let route = new Route(routeJson);
                     result.push(route);
                 });
-                console.log(result)
                 return result;
             })
             .catch(err => console.error(err));
@@ -87,18 +86,38 @@ class AirQualityService {
     constructor() {
     }
 
-    getPoints(listOfPoints) { //Array {latitude, longitude}
+    _postInterpolation(listOfPoints) { //Array {latitude, longitude}
         return fetch('http://smeur.tel.fer.hr:8823/smeur/interpolation', {
             method: 'post',
-            body:    JSON.stringify(listOfPoints),
-            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(listOfPoints),
+            headers: {'Content-Type': 'application/json'},
         })
+    }
+
+    _fakePostInterpolation(listOfPoints) { //Array {latitude, longitude}
+        return fetch('http://localhost:3000/air_quality.json')
+    }
+
+    getPoints(listOfPoints) { //Array {latitude, longitude}
+        return this._fakePostInterpolation(listOfPoints)
             .then(this.checkStatus)
             .then(res => res.json())
             .then(json => {
-                console.log(json);
+                let pointDictionary = _.keyBy(json, function (p) {
+                    return AirQualityService.buildPointId(p)
+                });
+                let pointsWithAirQuality = listOfPoints.map(function (p) {
+                    let id = AirQualityService.buildPointId(p);
+                    p.NO2_AQI = AirQualityService.getField("nitrogenDioxideConcentration_AQI", pointDictionary[id]);
+                    return p
+                });
+                console.log(pointsWithAirQuality);
             })
             .catch(err => console.error(err));
+    }
+
+    static buildPointId(p) {
+        return p.latitude.toString() + p.longitude.toString();
     }
 
     checkStatus(res) {
@@ -109,8 +128,10 @@ class AirQualityService {
         }
     }
 
+    static getField(fieldName, point) {
+        return _.find(point.observation, (obs) => _.endsWith(obs.obsProperty.name, fieldName)).value;
+    }
 }
 
 
-
-export { RoutingService, Point, Route, AirQualityService }
+export {RoutingService, Point, Route, AirQualityService}
