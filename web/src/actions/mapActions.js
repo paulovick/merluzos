@@ -1,5 +1,5 @@
 import { ACTIONS } from '../constants'
-import {AirQualityService, RoutingService} from '../helpers/RoutingService'
+import { RoutingService } from '../helpers/RoutingService'
 
 export const openFiltersScreen = () => {
   return {
@@ -33,7 +33,7 @@ export const fetchRoutes = (from, to, transport) => {
               });
               new AirQualityService().getPoints(transformedPoints);
           })
-          return dispatch(receiveRoutes(routes[0].points))
+          return dispatch(receiveRoutes(routes))
       })
   }
 }

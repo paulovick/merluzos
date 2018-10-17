@@ -25,10 +25,17 @@ export class MapContainer extends Component {
 
         <Marker name={'Current location'} />
 
-        <Polyline path={routes}
-                  strokeColor={'red'}
-                  strokeOpacity={0.8}
-                  strokeWeight={4} />
+        {
+          routes.map((route) => {
+            return (
+              <Polyline key={`${route.eco}`}
+                        path={route.points}
+                        strokeColor={route.eco ? 'green' : 'red'}
+                        strokeOpacity={0.8}
+                        strokeWeight={4} />
+            )
+          })
+        }
       </Map>
     )
   } 

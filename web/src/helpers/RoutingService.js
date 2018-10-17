@@ -7,7 +7,6 @@ class Point {
         this.latitude = latitude;
         this.longitude = longitude
     }
-
 }
 
 class Route {
@@ -34,15 +33,9 @@ class Route {
     getPointsToPaint() {
         return this.points;
     }
-
-
 }
 
 class RoutingService {
-
-    constructor() {
-    }
-
     buildRouteUrl(from, to, transport) {
         return 'http://smeur.tel.fer.hr:8823/smeur/grc' +
             '?fromLon=' + from.longitude +
