@@ -23,7 +23,7 @@ class Route {
         route.forEach(function (point) {
             let p = {
                 lat: point.location.latitude,
-                long: point.location.longitude
+                lng: point.location.longitude
             };
             result.push(p);
         });
@@ -107,5 +107,4 @@ class RoutingComponent extends Component {
 }
 
 
-export default RoutingComponent
-export default RoutingService
+export { RoutingComponent, RoutingService, Point, Route }
