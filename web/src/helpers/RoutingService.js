@@ -1,12 +1,9 @@
-import React, {Component} from 'react'
-
 
 class Point {
     constructor(latitude, longitude) {
         this.latitude = latitude;
         this.longitude = longitude
     }
-
 }
 
 class Route {
@@ -33,15 +30,9 @@ class Route {
     getPointsToPaint() {
         return this.points;
     }
-
-
 }
 
 class RoutingService {
-
-    constructor() {
-    }
-
     buildRouteUrl(from, to, transport) {
         return 'http://smeur.tel.fer.hr:8823/smeur/grc' +
             '?fromLon=' + from.longitude +
@@ -74,37 +65,4 @@ class RoutingService {
 
 }
 
-class RoutingComponent extends Component {
-    constructor(props) {
-        super(props);
-
-        this.checkStatus = this.checkStatus.bind(this);
-    }
-
-    componentWillMount() {
-        let from = new Point(16.3657665, 48.2114620);
-        let to = new Point(16.18465, 48.216799);
-        let transport = 'foot';
-        new RoutingService().getRoutes(from, to, transport).then(routes => {
-            console.log(routes);
-        });
-    }
-
-    checkStatus(res) {
-        if (res.ok) { // res.status >= 200 && res.status < 300
-            return res;
-        } else {
-            throw Error(res.statusText);
-        }
-    }
-
-
-    render() {
-        return (
-            <div>Test component</div>
-        )
-    }
-}
-
-
-export { RoutingComponent, RoutingService, Point, Route }
+export { RoutingService, Point, Route }
