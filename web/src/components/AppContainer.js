@@ -6,7 +6,7 @@ class AppContainer extends Component {
   render() {
     return (
       <div>
-        <MapContainer/>
+        <MapContainer />
       </div>
     )
   }
