@@ -46,7 +46,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchRoutes: () => dispatch(fetchRoutes())
+    fetchRoutes: (lat, lng, transport) => dispatch(fetchRoutes(lat, lng, transport))
   }
 }
 
