@@ -4,8 +4,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14921,
+          "longitude": 15.97427,
+          "latitude": 45.81136,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -15,8 +15,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14889,
+          "longitude": 15.97427,
+          "latitude": 45.81129,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -26,8 +26,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14833,
+          "longitude": 15.9743,
+          "latitude": 45.81123,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -37,8 +37,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.1483,
+          "longitude": 15.97545,
+          "latitude": 45.81129,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -48,8 +48,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14827,
+          "longitude": 15.97574,
+          "latitude": 45.81131,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -59,8 +59,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61236,
-          "latitude": 41.14811,
+          "longitude": 15.97588,
+          "latitude": 45.81132,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -70,8 +70,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61229,
-          "latitude": 41.14803,
+          "longitude": 15.97593,
+          "latitude": 45.81132,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -81,8 +81,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61215,
-          "latitude": 41.14795,
+          "longitude": 15.97595,
+          "latitude": 45.81132,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -92,8 +92,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61219,
-          "latitude": 41.14718,
+          "longitude": 15.97608,
+          "latitude": 45.81133,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -103,8 +103,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61217,
-          "latitude": 41.14717,
+          "longitude": 15.97641,
+          "latitude": 45.81135,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -114,8 +114,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61215,
-          "latitude": 41.14716,
+          "longitude": 15.97735,
+          "latitude": 45.81138,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -125,8 +125,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61212,
-          "latitude": 41.14714,
+          "longitude": 15.97745,
+          "latitude": 45.81138,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -136,8 +136,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61161,
-          "latitude": 41.1469,
+          "longitude": 15.97749,
+          "latitude": 45.81138,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -147,8 +147,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61152,
-          "latitude": 41.14689,
+          "longitude": 15.97752,
+          "latitude": 45.81138,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -158,8 +158,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61148,
-          "latitude": 41.14689,
+          "longitude": 15.97758,
+          "latitude": 45.81139,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -169,8 +169,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61142,
-          "latitude": 41.14688,
+          "longitude": 15.97818,
+          "latitude": 45.81144,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -180,8 +180,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61143,
-          "latitude": 41.1468,
+          "longitude": 15.9787,
+          "latitude": 45.81149,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -191,8 +191,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61141,
-          "latitude": 41.14682,
+          "longitude": 15.9795,
+          "latitude": 45.81162,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -202,8 +202,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61139,
-          "latitude": 41.14682,
+          "longitude": 15.97983,
+          "latitude": 45.81102,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -213,8 +213,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61136,
-          "latitude": 41.14683,
+          "longitude": 15.97987,
+          "latitude": 45.81093,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -224,8 +224,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61132,
-          "latitude": 41.14682,
+          "longitude": 15.9799,
+          "latitude": 45.81084,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -235,8 +235,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61132,
-          "latitude": 41.1468,
+          "longitude": 15.97996,
+          "latitude": 45.81084,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -246,8 +246,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61133,
-          "latitude": 41.14677,
+          "longitude": 15.98,
+          "latitude": 45.81069,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -257,8 +257,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6113,
-          "latitude": 41.14677,
+          "longitude": 15.98002,
+          "latitude": 45.81063,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -268,8 +268,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61126,
-          "latitude": 41.14675,
+          "longitude": 15.98157,
+          "latitude": 45.81067,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -279,8 +279,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61123,
-          "latitude": 41.14672,
+          "longitude": 15.98172,
+          "latitude": 45.81068,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -290,8 +290,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61122,
-          "latitude": 41.14669,
+          "longitude": 15.98183,
+          "latitude": 45.81069,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -301,8 +301,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61132,
-          "latitude": 41.14623,
+          "longitude": 15.98188,
+          "latitude": 45.81069,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -312,8 +312,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61127,
-          "latitude": 41.14622,
+          "longitude": 15.98362,
+          "latitude": 45.81077,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -323,8 +323,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61128,
-          "latitude": 41.14618,
+          "longitude": 15.98458,
+          "latitude": 45.81081,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -334,8 +334,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61131,
-          "latitude": 41.14605,
+          "longitude": 15.98525,
+          "latitude": 45.81083,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -345,8 +345,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61112,
-          "latitude": 41.14606,
+          "longitude": 15.98532,
+          "latitude": 45.81084,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -356,8 +356,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61092,
-          "latitude": 41.14606,
+          "longitude": 15.98542,
+          "latitude": 45.81088,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -367,8 +367,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61087,
-          "latitude": 41.14602,
+          "longitude": 15.98554,
+          "latitude": 45.81082,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -378,8 +378,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61085,
-          "latitude": 41.14598,
+          "longitude": 15.98633,
+          "latitude": 45.81035,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -389,8 +389,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61081,
-          "latitude": 41.14586,
+          "longitude": 15.98636,
+          "latitude": 45.81042,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -400,8 +400,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61083,
-          "latitude": 41.14579,
+          "longitude": 15.98639,
+          "latitude": 45.81045,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -411,8 +411,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61089,
-          "latitude": 41.14529,
+          "longitude": 15.98641,
+          "latitude": 45.81047,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -422,8 +422,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61089,
-          "latitude": 41.14519,
+          "longitude": 15.98651,
+          "latitude": 45.8104,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -433,8 +433,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6109,
-          "latitude": 41.14509,
+          "longitude": 15.98655,
+          "latitude": 45.81038,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -444,8 +444,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61085,
-          "latitude": 41.14492,
+          "longitude": 15.98657,
+          "latitude": 45.81036,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -455,8 +455,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61062,
-          "latitude": 41.14418,
+          "longitude": 15.98661,
+          "latitude": 45.81033,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -466,8 +466,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61048,
-          "latitude": 41.14374,
+          "longitude": 15.98662,
+          "latitude": 45.81032,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -477,8 +477,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61047,
-          "latitude": 41.14371,
+          "longitude": 15.98666,
+          "latitude": 45.8103,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -488,8 +488,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61042,
-          "latitude": 41.14353,
+          "longitude": 15.98669,
+          "latitude": 45.81032,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -499,8 +499,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61037,
-          "latitude": 41.14339,
+          "longitude": 15.98674,
+          "latitude": 45.81032,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -510,8 +510,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61033,
-          "latitude": 41.14332,
+          "longitude": 15.98678,
+          "latitude": 45.81032,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -521,8 +521,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61031,
-          "latitude": 41.14328,
+          "longitude": 15.98681,
+          "latitude": 45.81031,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -532,8 +532,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61029,
-          "latitude": 41.14327,
+          "longitude": 15.98684,
+          "latitude": 45.81029,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -543,8 +543,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61027,
-          "latitude": 41.14326,
+          "longitude": 15.98686,
+          "latitude": 45.81026,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -554,8 +554,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61024,
-          "latitude": 41.14326,
+          "longitude": 15.98686,
+          "latitude": 45.81023,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -565,8 +565,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60913,
-          "latitude": 41.14321,
+          "longitude": 15.98686,
+          "latitude": 45.8102,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -576,8 +576,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60881,
-          "latitude": 41.1432,
+          "longitude": 15.98683,
+          "latitude": 45.81018,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -587,8 +587,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60872,
-          "latitude": 41.14318,
+          "longitude": 15.98688,
+          "latitude": 45.81015,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -598,8 +598,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60863,
-          "latitude": 41.14317,
+          "longitude": 15.98689,
+          "latitude": 45.81014,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -609,8 +609,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60843,
-          "latitude": 41.1431,
+          "longitude": 15.98695,
+          "latitude": 45.8101,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -620,8 +620,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60841,
-          "latitude": 41.14314,
+          "longitude": 15.98691,
+          "latitude": 45.81004,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -631,8 +631,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6083,
-          "latitude": 41.14311,
+          "longitude": 15.98688,
+          "latitude": 45.80998,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -642,8 +642,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60826,
-          "latitude": 41.14311,
+          "longitude": 15.98689,
+          "latitude": 45.80991,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -653,8 +653,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60822,
-          "latitude": 41.14311,
+          "longitude": 15.98692,
+          "latitude": 45.80985,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -664,8 +664,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60818,
-          "latitude": 41.14313,
+          "longitude": 15.98698,
+          "latitude": 45.8098,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -675,8 +675,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60816,
-          "latitude": 41.14315,
+          "longitude": 15.98706,
+          "latitude": 45.80976,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -686,8 +686,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60816,
-          "latitude": 41.14316,
+          "longitude": 15.98715,
+          "latitude": 45.80974,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -697,8 +697,206 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6078,
-          "latitude": 41.1437,
+          "longitude": 15.98724,
+          "latitude": 45.80974,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98733,
+          "latitude": 45.80976,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.9877,
+          "latitude": 45.80959,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98776,
+          "latitude": 45.80954,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98776,
+          "latitude": 45.80947,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98777,
+          "latitude": 45.80944,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98785,
+          "latitude": 45.80936,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98857,
+          "latitude": 45.80896,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98865,
+          "latitude": 45.80891,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98933,
+          "latitude": 45.8085,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98945,
+          "latitude": 45.80842,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98951,
+          "latitude": 45.80838,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98962,
+          "latitude": 45.8083,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98969,
+          "latitude": 45.80824,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98979,
+          "latitude": 45.80818,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99112,
+          "latitude": 45.8074,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99119,
+          "latitude": 45.80735,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99127,
+          "latitude": 45.80745,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99131,
+          "latitude": 45.80742,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -706,8 +904,8 @@
         "navigationDescription": null
       }
     ],
-    "distance": 1069.1,
-    "travelTime": 763.6428571428571,
+    "distance": 1624.9,
+    "travelTime": 1160.6428571428573,
     "airQualityRating": 0.0,
     "eco": false
   },
@@ -716,8 +914,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14921,
+          "longitude": 15.97427,
+          "latitude": 45.81136,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -727,8 +925,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14889,
+          "longitude": 15.97427,
+          "latitude": 45.81129,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -738,8 +936,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14833,
+          "longitude": 15.9743,
+          "latitude": 45.81123,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -749,8 +947,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.1483,
+          "longitude": 15.97436,
+          "latitude": 45.8108,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -760,8 +958,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61299,
-          "latitude": 41.14827,
+          "longitude": 15.9744,
+          "latitude": 45.81033,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -771,8 +969,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61236,
-          "latitude": 41.14811,
+          "longitude": 15.97657,
+          "latitude": 45.8105,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -782,8 +980,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61229,
-          "latitude": 41.14803,
+          "longitude": 15.97751,
+          "latitude": 45.81057,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -793,8 +991,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61215,
-          "latitude": 41.14795,
+          "longitude": 15.97756,
+          "latitude": 45.81057,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -804,8 +1002,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61219,
-          "latitude": 41.14718,
+          "longitude": 15.9776,
+          "latitude": 45.81057,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -815,8 +1013,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61217,
-          "latitude": 41.14717,
+          "longitude": 15.97763,
+          "latitude": 45.81035,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -826,8 +1024,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61215,
-          "latitude": 41.14716,
+          "longitude": 15.97766,
+          "latitude": 45.81035,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -837,8 +1035,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61212,
-          "latitude": 41.14714,
+          "longitude": 15.97775,
+          "latitude": 45.81035,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -848,8 +1046,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61161,
-          "latitude": 41.1469,
+          "longitude": 15.97787,
+          "latitude": 45.80943,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -859,8 +1057,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61152,
-          "latitude": 41.14689,
+          "longitude": 15.97788,
+          "latitude": 45.80934,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -870,8 +1068,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61148,
-          "latitude": 41.14689,
+          "longitude": 15.9779,
+          "latitude": 45.80928,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -881,8 +1079,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61142,
-          "latitude": 41.14688,
+          "longitude": 15.97802,
+          "latitude": 45.80896,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -892,8 +1090,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61143,
-          "latitude": 41.1468,
+          "longitude": 15.97811,
+          "latitude": 45.80836,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -903,8 +1101,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61141,
-          "latitude": 41.14682,
+          "longitude": 15.97808,
+          "latitude": 45.80763,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -914,8 +1112,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61139,
-          "latitude": 41.14682,
+          "longitude": 15.97806,
+          "latitude": 45.80756,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -925,8 +1123,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61136,
-          "latitude": 41.14683,
+          "longitude": 15.97805,
+          "latitude": 45.80751,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -936,8 +1134,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61132,
-          "latitude": 41.14682,
+          "longitude": 15.97821,
+          "latitude": 45.80751,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -947,8 +1145,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61132,
-          "latitude": 41.1468,
+          "longitude": 15.97833,
+          "latitude": 45.80751,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -958,8 +1156,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61133,
-          "latitude": 41.14677,
+          "longitude": 15.97888,
+          "latitude": 45.80752,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -969,8 +1167,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6113,
-          "latitude": 41.14677,
+          "longitude": 15.97903,
+          "latitude": 45.80752,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -980,8 +1178,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61126,
-          "latitude": 41.14675,
+          "longitude": 15.97918,
+          "latitude": 45.80752,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -991,8 +1189,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61123,
-          "latitude": 41.14672,
+          "longitude": 15.97925,
+          "latitude": 45.80752,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1002,8 +1200,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61122,
-          "latitude": 41.14669,
+          "longitude": 15.97931,
+          "latitude": 45.80753,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1013,8 +1211,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61132,
-          "latitude": 41.14623,
+          "longitude": 15.97941,
+          "latitude": 45.80754,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1024,8 +1222,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61127,
-          "latitude": 41.14622,
+          "longitude": 15.98016,
+          "latitude": 45.80755,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1035,8 +1233,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61128,
-          "latitude": 41.14618,
+          "longitude": 15.98023,
+          "latitude": 45.80756,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1046,8 +1244,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61131,
-          "latitude": 41.14605,
+          "longitude": 15.9803,
+          "latitude": 45.80756,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1057,8 +1255,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61112,
-          "latitude": 41.14606,
+          "longitude": 15.98088,
+          "latitude": 45.80756,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1068,8 +1266,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61092,
-          "latitude": 41.14606,
+          "longitude": 15.982,
+          "latitude": 45.8076,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1079,8 +1277,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61087,
-          "latitude": 41.14602,
+          "longitude": 15.98202,
+          "latitude": 45.8076,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1090,8 +1288,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61085,
-          "latitude": 41.14598,
+          "longitude": 15.98208,
+          "latitude": 45.8076,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1101,8 +1299,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61081,
-          "latitude": 41.14586,
+          "longitude": 15.98215,
+          "latitude": 45.8076,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1112,8 +1310,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61083,
-          "latitude": 41.14579,
+          "longitude": 15.98382,
+          "latitude": 45.80765,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1123,8 +1321,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61089,
-          "latitude": 41.14529,
+          "longitude": 15.98384,
+          "latitude": 45.80763,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1134,8 +1332,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61089,
-          "latitude": 41.14519,
+          "longitude": 15.98385,
+          "latitude": 45.80763,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1145,8 +1343,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6109,
-          "latitude": 41.14509,
+          "longitude": 15.98386,
+          "latitude": 45.80763,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1156,8 +1354,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61085,
-          "latitude": 41.14492,
+          "longitude": 15.98392,
+          "latitude": 45.80763,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1167,8 +1365,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61062,
-          "latitude": 41.14418,
+          "longitude": 15.98391,
+          "latitude": 45.80774,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1178,8 +1376,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61048,
-          "latitude": 41.14374,
+          "longitude": 15.98397,
+          "latitude": 45.80776,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1189,8 +1387,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61047,
-          "latitude": 41.14371,
+          "longitude": 15.98589,
+          "latitude": 45.80903,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1200,8 +1398,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61042,
-          "latitude": 41.14353,
+          "longitude": 15.98642,
+          "latitude": 45.80935,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1211,8 +1409,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61037,
-          "latitude": 41.14339,
+          "longitude": 15.98653,
+          "latitude": 45.80947,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1222,8 +1420,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61033,
-          "latitude": 41.14332,
+          "longitude": 15.98655,
+          "latitude": 45.8095,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1233,8 +1431,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61031,
-          "latitude": 41.14328,
+          "longitude": 15.98667,
+          "latitude": 45.80945,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1244,8 +1442,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61028,
-          "latitude": 41.14327,
+          "longitude": 15.987,
+          "latitude": 45.80945,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1255,8 +1453,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.61024,
-          "latitude": 41.14326,
+          "longitude": 15.98776,
+          "latitude": 45.80947,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1266,8 +1464,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60913,
-          "latitude": 41.14321,
+          "longitude": 15.988,
+          "latitude": 45.8095,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1277,8 +1475,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60881,
-          "latitude": 41.1432,
+          "longitude": 15.98804,
+          "latitude": 45.80947,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1288,8 +1486,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60872,
-          "latitude": 41.14318,
+          "longitude": 15.9881,
+          "latitude": 45.80943,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1299,8 +1497,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60863,
-          "latitude": 41.14317,
+          "longitude": 15.98876,
+          "latitude": 45.80903,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1310,8 +1508,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60843,
-          "latitude": 41.1431,
+          "longitude": 15.98944,
+          "latitude": 45.80859,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1321,8 +1519,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60841,
-          "latitude": 41.14314,
+          "longitude": 15.98963,
+          "latitude": 45.80847,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1332,8 +1530,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6083,
-          "latitude": 41.14311,
+          "longitude": 15.98961,
+          "latitude": 45.80846,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1343,8 +1541,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60826,
-          "latitude": 41.14311,
+          "longitude": 15.9896,
+          "latitude": 45.80843,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1354,8 +1552,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60822,
-          "latitude": 41.14311,
+          "longitude": 15.98959,
+          "latitude": 45.8084,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1365,8 +1563,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60818,
-          "latitude": 41.14313,
+          "longitude": 15.9896,
+          "latitude": 45.80838,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1376,8 +1574,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60816,
-          "latitude": 41.14315,
+          "longitude": 15.98962,
+          "latitude": 45.80835,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1387,8 +1585,8 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.60816,
-          "latitude": 41.14316,
+          "longitude": 15.98965,
+          "latitude": 45.80833,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1398,8 +1596,173 @@
       {
         "location": {
           "@c": ".WGS84Location",
-          "longitude": -8.6078,
-          "latitude": 41.1437,
+          "longitude": 15.98969,
+          "latitude": 45.80832,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98973,
+          "latitude": 45.80832,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98977,
+          "latitude": 45.80833,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98981,
+          "latitude": 45.80835,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98989,
+          "latitude": 45.80829,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98984,
+          "latitude": 45.80823,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98979,
+          "latitude": 45.80818,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.98984,
+          "latitude": 45.808,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99001,
+          "latitude": 45.80792,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99008,
+          "latitude": 45.80779,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99009,
+          "latitude": 45.80759,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99074,
+          "latitude": 45.80739,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99112,
+          "latitude": 45.8074,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99119,
+          "latitude": 45.80735,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99127,
+          "latitude": 45.80745,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": 15.99131,
+          "latitude": 45.80742,
           "altitude": 0.0,
           "name": null,
           "description": null
@@ -1407,8 +1770,8 @@
         "navigationDescription": null
       }
     ],
-    "distance": 1068.9,
-    "travelTime": 763.5000000000001,
+    "distance": 1992.7,
+    "travelTime": 1423.357142857143,
     "airQualityRating": 0.0,
     "eco": true
   }
