@@ -108,3 +108,4 @@ class RoutingComponent extends Component {
 
 
 export default RoutingComponent
+export default RoutingService
