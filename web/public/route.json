@@ -1,0 +1,1415 @@
+[
+  {
+    "route": [
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14921,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14889,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14833,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.1483,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14827,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61236,
+          "latitude": 41.14811,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61229,
+          "latitude": 41.14803,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61215,
+          "latitude": 41.14795,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61219,
+          "latitude": 41.14718,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61217,
+          "latitude": 41.14717,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61215,
+          "latitude": 41.14716,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61212,
+          "latitude": 41.14714,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61161,
+          "latitude": 41.1469,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61152,
+          "latitude": 41.14689,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61148,
+          "latitude": 41.14689,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61142,
+          "latitude": 41.14688,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61143,
+          "latitude": 41.1468,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61141,
+          "latitude": 41.14682,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61139,
+          "latitude": 41.14682,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61136,
+          "latitude": 41.14683,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61132,
+          "latitude": 41.14682,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61132,
+          "latitude": 41.1468,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61133,
+          "latitude": 41.14677,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6113,
+          "latitude": 41.14677,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61126,
+          "latitude": 41.14675,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61123,
+          "latitude": 41.14672,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61122,
+          "latitude": 41.14669,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61132,
+          "latitude": 41.14623,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61127,
+          "latitude": 41.14622,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61128,
+          "latitude": 41.14618,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61131,
+          "latitude": 41.14605,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61112,
+          "latitude": 41.14606,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61092,
+          "latitude": 41.14606,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61087,
+          "latitude": 41.14602,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61085,
+          "latitude": 41.14598,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61081,
+          "latitude": 41.14586,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61083,
+          "latitude": 41.14579,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61089,
+          "latitude": 41.14529,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61089,
+          "latitude": 41.14519,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6109,
+          "latitude": 41.14509,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61085,
+          "latitude": 41.14492,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61062,
+          "latitude": 41.14418,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61048,
+          "latitude": 41.14374,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61047,
+          "latitude": 41.14371,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61042,
+          "latitude": 41.14353,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61037,
+          "latitude": 41.14339,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61033,
+          "latitude": 41.14332,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61031,
+          "latitude": 41.14328,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61029,
+          "latitude": 41.14327,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61027,
+          "latitude": 41.14326,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61024,
+          "latitude": 41.14326,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60913,
+          "latitude": 41.14321,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60881,
+          "latitude": 41.1432,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60872,
+          "latitude": 41.14318,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60863,
+          "latitude": 41.14317,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60843,
+          "latitude": 41.1431,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60841,
+          "latitude": 41.14314,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6083,
+          "latitude": 41.14311,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60826,
+          "latitude": 41.14311,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60822,
+          "latitude": 41.14311,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60818,
+          "latitude": 41.14313,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60816,
+          "latitude": 41.14315,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60816,
+          "latitude": 41.14316,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6078,
+          "latitude": 41.1437,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      }
+    ],
+    "distance": 1069.1,
+    "travelTime": 763.6428571428571,
+    "airQualityRating": 0.0,
+    "eco": false
+  },
+  {
+    "route": [
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14921,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14889,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14833,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.1483,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61299,
+          "latitude": 41.14827,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61236,
+          "latitude": 41.14811,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61229,
+          "latitude": 41.14803,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61215,
+          "latitude": 41.14795,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61219,
+          "latitude": 41.14718,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61217,
+          "latitude": 41.14717,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61215,
+          "latitude": 41.14716,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61212,
+          "latitude": 41.14714,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61161,
+          "latitude": 41.1469,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61152,
+          "latitude": 41.14689,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61148,
+          "latitude": 41.14689,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61142,
+          "latitude": 41.14688,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61143,
+          "latitude": 41.1468,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61141,
+          "latitude": 41.14682,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61139,
+          "latitude": 41.14682,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61136,
+          "latitude": 41.14683,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61132,
+          "latitude": 41.14682,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61132,
+          "latitude": 41.1468,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61133,
+          "latitude": 41.14677,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6113,
+          "latitude": 41.14677,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61126,
+          "latitude": 41.14675,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61123,
+          "latitude": 41.14672,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61122,
+          "latitude": 41.14669,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61132,
+          "latitude": 41.14623,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61127,
+          "latitude": 41.14622,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61128,
+          "latitude": 41.14618,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61131,
+          "latitude": 41.14605,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61112,
+          "latitude": 41.14606,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61092,
+          "latitude": 41.14606,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61087,
+          "latitude": 41.14602,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61085,
+          "latitude": 41.14598,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61081,
+          "latitude": 41.14586,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61083,
+          "latitude": 41.14579,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61089,
+          "latitude": 41.14529,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61089,
+          "latitude": 41.14519,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6109,
+          "latitude": 41.14509,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61085,
+          "latitude": 41.14492,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61062,
+          "latitude": 41.14418,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61048,
+          "latitude": 41.14374,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61047,
+          "latitude": 41.14371,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61042,
+          "latitude": 41.14353,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61037,
+          "latitude": 41.14339,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61033,
+          "latitude": 41.14332,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61031,
+          "latitude": 41.14328,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61028,
+          "latitude": 41.14327,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.61024,
+          "latitude": 41.14326,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60913,
+          "latitude": 41.14321,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60881,
+          "latitude": 41.1432,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60872,
+          "latitude": 41.14318,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60863,
+          "latitude": 41.14317,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60843,
+          "latitude": 41.1431,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60841,
+          "latitude": 41.14314,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6083,
+          "latitude": 41.14311,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60826,
+          "latitude": 41.14311,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60822,
+          "latitude": 41.14311,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60818,
+          "latitude": 41.14313,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60816,
+          "latitude": 41.14315,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.60816,
+          "latitude": 41.14316,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      },
+      {
+        "location": {
+          "@c": ".WGS84Location",
+          "longitude": -8.6078,
+          "latitude": 41.1437,
+          "altitude": 0.0,
+          "name": null,
+          "description": null
+        },
+        "navigationDescription": null
+      }
+    ],
+    "distance": 1068.9,
+    "travelTime": 763.5000000000001,
+    "airQualityRating": 0.0,
+    "eco": true
+  }
+]
