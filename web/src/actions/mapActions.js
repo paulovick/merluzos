@@ -25,6 +25,6 @@ export const fetchRoutes = (from, to, transport) => {
     dispatch(requestRoutes())
     const routingService = new RoutingService()
     return routingService.getRoutes(from, to, transport)
-      .then(routes => dispatch(receiveRoutes(routes[0].points)))
+      .then(routes => dispatch(receiveRoutes(routes)))
   }
 }
