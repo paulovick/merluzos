@@ -6,10 +6,10 @@ import { fetchRoutes } from '../actions'
 
 export class MapContainer extends Component {
   componentWillMount() {
-    let from = new Point(16.3657665, 48.2114620)
-    let to = new Point(16.18465, 48.216799)
+    let from = new Point(45.811357, 15.974306)
+    let to = new Point(45.807408, 15.991293)
     let transport = 'foot'
-    this.props.fetchRoutes(from, to, transport)
+    this.props.dispatch(fetchRoutes(from, to, transport))
   }
 
   render() {
@@ -46,7 +46,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchRoutes: (lat, lng, transport) => dispatch(fetchRoutes(lat, lng, transport))
+      dispatch: dispatch
   }
 }
 

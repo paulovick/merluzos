@@ -49,6 +49,7 @@ class RoutingService {
 
     getRoutes(from, to, transport) {
         const url = this.buildRouteUrl(from, to, transport);
+        console.log(url)
         return fetch(url)
             .then(this.checkStatus)
             .then(res => res.json())
@@ -58,6 +59,7 @@ class RoutingService {
                     let route = new Route(routeJson);
                     result.push(route);
                 });
+                console.log(result)
                 return result;
             })
             .catch(err => console.error(err));
@@ -70,8 +72,6 @@ class RoutingService {
             throw Error(res.statusText);
         }
     }
-
-
 }
 
 class AirQualityService {
