@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import MapContainer from './MapContainer'
 import { Button } from 'semantic-ui-react'
+import MapContainer from './MapContainer'
+import { openFiltersScreen } from '../actions'
 
 class MapScreen extends Component {
+  onSearchClick() {
+    this.props.openFiltersScreen()
+  }
+
   render() {
     const {
       fabContainerStyle,
@@ -14,7 +19,9 @@ class MapScreen extends Component {
       <div>
         <MapContainer />
         <div style={fabContainerStyle}>
-          <Button style={fabStyle} circular icon="search" color="green" size="huge" />
+          <Button style={fabStyle}
+                  circular icon="search" color="green" size="huge"
+                  onClick={this.onSearchClick.bind(this)} />
         </div>
       </div>
     )
@@ -32,4 +39,10 @@ const style = {
   }
 }
 
-export default connect()(MapScreen)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    openFiltersScreen: () => dispatch(openFiltersScreen())
+  }
+}
+
+export default connect(null, mapDispatchToProps)(MapScreen)

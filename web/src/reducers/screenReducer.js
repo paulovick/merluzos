@@ -1,12 +1,16 @@
-import { SCREENS } from '../constants'
+import { SCREENS, ACTIONS } from '../constants'
 
 const INITIAL_STATE = {
   currentScreen: SCREENS.MapScreen
 }
 
 const screenReducer = (state = INITIAL_STATE, action) => {
-  // TODO
-  return state
+  switch(action.type) {
+    case ACTIONS.OpenFiltersScreen:
+      return { ...state, currentScreen: SCREENS.FiltersScreen }
+    default:
+      return state
+  }
 }
 
 export { screenReducer }

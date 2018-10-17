@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import MapScreen from './MapScreen'
+import FiltersScreen from './FilterScreen'
 import { SCREENS } from '../constants'
 
 class AppContainer extends Component {
@@ -13,11 +14,13 @@ class AppContainer extends Component {
   renderCurrentPage() {
     const { currentScreen } = this.props
 
-    if (currentScreen === SCREENS.MapScreen)
-    {
-      return <MapScreen />
-    } else {
-      return <div>404 not found</div>
+    switch(currentScreen) {
+      case SCREENS.MapScreen:
+        return <MapScreen />
+      case SCREENS.FiltersScreen:
+        return <FiltersScreen />
+      default:
+        return <div>404 not found</div>
     }
   }
 

@@ -1,6 +1,7 @@
 
 const SCREENS = {
-  MapScreen: 'MapScreen'
+  MapScreen: 'MapScreen',
+  FiltersScreen: 'FiltersScreen'
 }
 
 export { SCREENS }
