@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from 'semantic-ui-react'
+import { Search } from 'semantic-ui-react'
 
 const FilterInput = (props) => {
   const { placeholder } = props
@@ -7,7 +7,10 @@ const FilterInput = (props) => {
 
   return (
     <div style={containerStyle}>
-      <Input style={inputStyle} placeholder={placeholder}/>
+      <Search style={inputStyle}
+              placeholder={placeholder}
+      
+      />
     </div>
   );
 };
