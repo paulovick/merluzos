@@ -1,8 +1,9 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
-import { mapReducer, filterReducer } from '../reducers'
+import { mapReducer, filterReducer, screenReducer } from '../reducers'
 
 const rootReducer = combineReducers({
+    screen: screenReducer,
     map: mapReducer,
     filter: filterReducer
 })
