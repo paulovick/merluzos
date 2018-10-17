@@ -18,7 +18,8 @@ const FilterInput = (props) => {
 const styles = {
   containerStyle: {
     marginTop: 20,
-    width: '100%'
+    width: '100%',
+    marginBottom: 10
   },
   inputStyle: {
     width: '100%'

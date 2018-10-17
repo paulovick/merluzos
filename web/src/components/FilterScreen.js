@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Button } from 'semantic-ui-react'
-import { CenteredContainer } from './common'
+import { CenteredContainer, CheckboxToggle } from './common'
 import { FilterInput } from './common'
 import { COLORS } from '../constants'
 
@@ -32,8 +32,12 @@ class FilterScreen extends Component {
 
           <FilterInput placeholder="To..." />
 
-          <div></div>
-          <div></div>
+          <div>
+            <CheckboxToggle label="healthy route"></CheckboxToggle>
+          </div>
+          <div>
+            <CheckboxToggle label="fast route"></CheckboxToggle>
+          </div>
         </CenteredContainer>
       </div>
     )
@@ -57,6 +61,9 @@ const styles = {
     backgroundColor: COLORS.Dark,
     color: COLORS.LightText,
     border: '1px solid rgba(0, 0, 0, 0.2)'
+  },
+  checkboxStyle: {
+
   }
 }
 
