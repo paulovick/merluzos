@@ -17,14 +17,18 @@ export class MapContainer extends Component {
 
     return (
       <Map google={this.props.google}
-           onClick={this.onMapClicked}>
+           onClick={this.onMapClicked}
+           initialCenter={{
+             lat: 45.812236, 
+             lng: 15.980941
+           }}>
 
         <Marker name={'Current location'} />
 
         <Polyline path={routes}
                   strokeColor={'red'}
                   strokeOpacity={0.8}
-                  strokeWeight={2} />
+                  strokeWeight={4} />
       </Map>
     )
   } 
