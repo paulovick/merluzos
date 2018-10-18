@@ -19,7 +19,7 @@ const styles = {
   containerStyle: {
     marginTop: 20,
     width: '100%',
-    marginBottom: 10
+    marginBottom: 20
   },
   inputStyle: {
     width: '100%'

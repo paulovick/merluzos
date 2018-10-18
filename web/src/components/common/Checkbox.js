@@ -6,20 +6,22 @@ const CheckboxToggle = (props) =>{
     const { checkboxStyle, labelStyle, containerStyle } = styles
 
     return(
-        <table>
-            <tbody style={containerStyle}>
-                <tr>
-                    <td style={{ width: '80%', position: "relative"}}>
-                        <label style={labelStyle}>
-                            { label }
-                        </label>
-                    </td>
-                    <td style={{ width: '20%'}}>
-                        <Checkbox toggle/>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div style={containerStyle}>
+            <table style={{width: "100%"}}>
+                <tbody>
+                    <tr>
+                        <td style={{ width: '80%', position: "relative"}}>
+                            <label style={labelStyle}>
+                                { label }
+                            </label>
+                        </td>
+                        <td style={{ width: '20%'}}>
+                            <Checkbox toggle/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     )
 } 
 
@@ -33,18 +35,19 @@ const CheckboxToggle = (props) =>{
 
 const styles = {
     checkboxStyle: {
-        position: "right"
     },
     labelStyle: {
         /* paddingRight: "30%" */
         position: "absolute",
         left: "0px",
-        top: "0px"
+        top: "0px",
+        color: "white",
+        fontWeight: "bold",
+        fontSize: "large"
     },
     containerStyle: {
         width: "100%",
-        marginTop: 20,
-        marginBottom: 10
+        marginTop: 10
     }
    
 }

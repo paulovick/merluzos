@@ -10,7 +10,8 @@ class FilterScreen extends Component {
     const {
       containerStyle,
       choiceButtonContainerStyle,
-      choiceButtonStyle
+      choiceButtonStyle,
+      startButtonContainerStyle
     } = styles
 
     const walkBackgroundColor = COLORS.Dark
@@ -33,10 +34,13 @@ class FilterScreen extends Component {
           <FilterInput placeholder="To..." />
 
           <div>
-            <CheckboxToggle label="healthy route"></CheckboxToggle>
+            <CheckboxToggle label="Healthy route"></CheckboxToggle>
           </div>
           <div>
-            <CheckboxToggle label="fast route"></CheckboxToggle>
+            <CheckboxToggle label="Fast route"></CheckboxToggle>
+          </div>
+          <div style={startButtonContainerStyle}>
+              <Button disabled style={{boxShadow: '1px 3px 10px #888'}}>Start</Button>
           </div>
         </CenteredContainer>
       </div>
@@ -62,8 +66,10 @@ const styles = {
     color: COLORS.LightText,
     border: '1px solid rgba(0, 0, 0, 0.2)'
   },
-  checkboxStyle: {
-
+  startButtonContainerStyle: {
+    position: 'absolute',
+    bottom: "7%",
+    right: "15%"
   }
 }
 
