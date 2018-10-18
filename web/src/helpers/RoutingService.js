@@ -1,8 +1,22 @@
+import React from 'react'
+import _ from 'lodash'
+
 
 class Point {
     constructor(latitude, longitude) {
         this.latitude = latitude;
         this.longitude = longitude
+    }
+}
+
+class Segment {
+    constructor(points, level) {
+        this.points = points;
+        this.level = level;
+    }
+
+    addPoint(point) {
+        this.points.push({lat: point.latitude, lng: point.longitude})
     }
 }
 
@@ -13,6 +27,7 @@ class Route {
         this.eco = routeJson.eco;
         this.distance = routeJson.distance;
         this.points = this.buildPoints(routeJson.route);
+        this.segments = [new Segment(this.points, 1)];
     }
 
     buildPoints(route) {
@@ -25,10 +40,6 @@ class Route {
             result.push(p);
         });
         return result;
-    }
-
-    getPointsToPaint() {
-        return this.points;
     }
 }
 
@@ -49,7 +60,6 @@ class RoutingService {
 
     getRoutes(from, to, transport) {
         const url = this.buildRouteUrl(from, to, transport);
-        console.log(url)
         return fetch(url)
             .then(this.checkStatus)
             .then(res => res.json())
@@ -59,7 +69,6 @@ class RoutingService {
                     let route = new Route(routeJson);
                     result.push(route);
                 });
-                console.log(result)
                 return result;
             })
             .catch(err => console.error(err));
@@ -78,18 +87,42 @@ class AirQualityService {
     constructor() {
     }
 
-    getPoints(listOfPoints) { //Array {latitude, longitude}
+    _postInterpolation(listOfPoints) { //Array {latitude, longitude}
         return fetch('http://smeur.tel.fer.hr:8823/smeur/interpolation', {
             method: 'post',
-            body:    JSON.stringify(listOfPoints),
-            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(listOfPoints),
+            headers: {'Content-Type': 'application/json'},
         })
+    }
+
+    _fakePostInterpolation(listOfPoints) { //Array {latitude, longitude}
+        return fetch('http://localhost:3000/air_quality.json')
+    }
+
+    getPoints(listOfPoints) { //Array {latitude, longitude}
+        let transformedPoints = listOfPoints.map((point) => {
+            return {latitude: point.lat, longitude: point.lng}
+        });
+        return this._postInterpolation(transformedPoints)
             .then(this.checkStatus)
             .then(res => res.json())
             .then(json => {
-                console.log(json);
+                let pointDictionary = _.keyBy(json, function (p) {
+                    return AirQualityService.buildPointId(p)
+                });
+                let pointsWithAirQuality = _.map(transformedPoints, function (p) {
+                    let id = AirQualityService.buildPointId(p);
+                    p.NO2_AQI = AirQualityService.getField("nitrogenDioxideConcentration_AQI", pointDictionary[id]);
+                    return p;
+                });
+
+                return pointsWithAirQuality
             })
             .catch(err => console.error(err));
+    }
+
+    static buildPointId(p) {
+        return p.latitude.toString() + p.longitude.toString();
     }
 
     checkStatus(res) {
@@ -100,6 +133,10 @@ class AirQualityService {
         }
     }
 
+    static getField(fieldName, point) {
+        return parseInt(_.find(point.observation, (obs) => _.endsWith(obs.obsProperty.name, fieldName)).value);
+    }
 }
 
-export { RoutingService, Point, Route, AirQualityService }
+
+export {RoutingService, Point, Segment, Route, AirQualityService}

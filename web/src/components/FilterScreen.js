@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Button } from 'semantic-ui-react'
-import { CenteredContainer } from './common'
+import { CenteredContainer, CheckboxToggle } from './common'
 import { FilterInput } from './common'
 import { COLORS } from '../constants'
 import { fetchSearch } from '../actions'
@@ -15,7 +15,8 @@ class FilterScreen extends Component {
     const {
       containerStyle,
       choiceButtonContainerStyle,
-      choiceButtonStyle
+      choiceButtonStyle,
+      startButtonContainerStyle
     } = styles
     const {
       from,
@@ -45,8 +46,15 @@ class FilterScreen extends Component {
 
           <FilterInput placeholder="To..." />
 
-          <div></div>
-          <div></div>
+          <div>
+            <CheckboxToggle label="Healthy route"></CheckboxToggle>
+          </div>
+          <div>
+            <CheckboxToggle label="Fast route"></CheckboxToggle>
+          </div>
+          <div style={startButtonContainerStyle}>
+              <Button disabled style={{boxShadow: '1px 3px 10px #888'}}>Start</Button>
+          </div>
         </CenteredContainer>
       </div>
     )
@@ -70,6 +78,11 @@ const styles = {
     backgroundColor: COLORS.Dark,
     color: COLORS.LightText,
     border: '1px solid rgba(0, 0, 0, 0.2)'
+  },
+  startButtonContainerStyle: {
+    position: 'absolute',
+    bottom: "7%",
+    right: "15%"
   }
 }
 
