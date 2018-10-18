@@ -7,10 +7,11 @@ class AirQualityRoutingService {
 
         let promises = _.map(routes, (route) => {
           return new AirQualityService().getPoints(route.points).then(pointsWithAirQuality => {
+              console.log('addAirQualityInfo');
               route.segments = this.buildSegmentsByAQ(pointsWithAirQuality);
               return route;
             }
-          );
+          ).catch(err => console.error(err));
         });
 
         return Promise.all(promises);

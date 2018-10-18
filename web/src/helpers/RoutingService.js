@@ -107,6 +107,7 @@ class AirQualityService {
             .then(this.checkStatus)
             .then(res => res.json())
             .then(json => {
+              console.log('_postInterpolation');
                 let pointDictionary = _.keyBy(json, function (p) {
                     return AirQualityService.buildPointId(p)
                 });
@@ -117,8 +118,7 @@ class AirQualityService {
                 });
 
                 return pointsWithAirQuality
-            })
-            .catch(err => console.error(err));
+            });
     }
 
     static buildPointId(p) {

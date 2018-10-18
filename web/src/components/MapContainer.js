@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
-import {GoogleApiWrapper, Map, Marker, Polyline} from 'google-maps-react'
+import {GoogleApiWrapper, Map, Marker, Polyline, InfoWindow} from 'google-maps-react'
 import {Point} from '../helpers/RoutingService'
 import {connect} from 'react-redux'
 import {fetchRoutes} from '../actions'
 import _ from 'lodash'
+import {LEVELS} from '../constants/polutionLevels';
+import PopUp from './PopUp'
 
 export class MapContainer extends Component {
   constructor(props) {
@@ -59,8 +61,15 @@ export class MapContainer extends Component {
   }
 
   colorByLevel(level) {
-    const colors = ['green', 'yellow', 'orange', 'red', '#540099', '#800000'];
-    return colors[level - 1];
+    console.log(level);
+    console.log(LEVELS[level].color);
+    return LEVELS[level].color;
+  }
+
+  clickPolyline(props, line, e) {
+    let lat = e.latLng.lat();
+    let lng = e.latLng.lng();
+    console.log(props.level);
   }
 
   render() {
@@ -87,6 +96,8 @@ export class MapContainer extends Component {
                           offset: '0',
                           repeat: '20px'
                         }]}
+                        onClick={this.clickPolyline}
+                        level={s.level}
               />
             )
           } else {
@@ -110,7 +121,11 @@ export class MapContainer extends Component {
              lng: 15.980941
            }}>
         <Marker name={'To'} position={{lat: 45.837375, lng: 16.025867}}/>
-
+        <InfoWindow
+          visible={true}
+          position={{lat: 45.837375, lng: 16.025867}}>
+          <PopUp></PopUp>
+        </InfoWindow>
         {
           lines
         }
