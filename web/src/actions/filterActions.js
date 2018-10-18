@@ -25,9 +25,9 @@ export const fetchSearch = (fieldName, text) => {
     dispatch(requestSearch(fieldName, text))
 
     const apiKey = 'AIzaSyCSX1Vis_20mfI2G0CI4fy_nWUeUTs1wOA'
-    const inputType = 'textquery'
-    const fields = 'formatted_address,name,geometry/location'
-    fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=${apiKey}&inputtype=${inputType}&input=${encodeURI(text)}&fields=${fields}`, {
+    //const inputType = 'textquery'
+    //const fields = 'formatted_address,name,geometry/location'
+    fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?key=${apiKey}&query=${encodeURI(text)}`, {
       method: 'GET',
       mode: 'cors',
       headers: {
@@ -42,8 +42,8 @@ export const fetchSearch = (fieldName, text) => {
         }
       })
       .then(json => {
-        console.log(json.candidates)
-        dispatch(receiveSearch(fieldName, json.candidates))
+        console.log(json)
+        dispatch(receiveSearch(fieldName, json.results))
       })
   }
 }

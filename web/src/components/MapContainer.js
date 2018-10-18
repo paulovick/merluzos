@@ -23,8 +23,6 @@ export class MapContainer extends Component {
              lng: 15.980941
            }}>
 
-        <Marker name={'Current location'} />
-
         {
           routes.map((route) => {
             return (
