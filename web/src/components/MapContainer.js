@@ -39,15 +39,15 @@ export class MapContainer extends Component {
                         && prevProps.routeType !== null
     if (!validPrevProperties)
       return true
-    
+
     const result = this.props.from.latitude !== prevProps.from.latitude
-                  || this.props.from.longitude !== prevProps.from.longitude
-                  || this.props.to.longitude !== prevProps.to.longitude
-                  || this.props.to.latitude !== prevProps.to.latitude
-                  || this.props.routeType !== prevProps.routeType
-                  || this.props.eco !== prevProps.eco
-                  || this.props.fast !== prevProps.fast
-    
+      || this.props.from.longitude !== prevProps.from.longitude
+      || this.props.to.longitude !== prevProps.to.longitude
+      || this.props.to.latitude !== prevProps.to.latitude
+      || this.props.routeType !== prevProps.routeType
+      || this.props.eco !== prevProps.eco
+      || this.props.fast !== prevProps.fast
+
     return result
   }
 
@@ -104,14 +104,15 @@ export class MapContainer extends Component {
     const {
       routes,
       from,
-      to
+      to,
+      google
     } = this.props
 
     let i = 0;
     const lineSymbol = {
-      path: 'M 0,-1 0,1',
+      path: google.maps.SymbolPath.CIRCLE,
       strokeOpacity: 1,
-      scale: 4
+      scale: 3
     };
     let lines = _.flatten(
       _.map(routes, (route) => {
@@ -123,11 +124,11 @@ export class MapContainer extends Component {
                         path={s.points}
                         strokeColor={this.colorByLevel(s.level)}
                         strokeOpacity={0.}
-                        strokeWeight={4}
+                        strokeWeight={2}
                         icons={[{
                           icon: lineSymbol,
                           offset: '0',
-                          repeat: '20px'
+                          repeat: '10px'
                         }]}
                         onClick={this.clickPolyline}
                         level={s.level}

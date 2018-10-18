@@ -4,31 +4,31 @@ const LEVELS = {
     name: 'Excellent',
     implications: 'No health implications.',
     precautions: 'Everyone can continue their outdoor activities normally.',
-    color: '#4caf50'
+    color: '#79bc6a'
   },
   2: {
     name: 'Good',
     implications: 'Some pollutants may slightly affect very few hypersensitive individuals.',
     precautions: 'Only very few hypersensitive people should reduce outdoor activities.',
-    color: '#ffeb3b'
+    color: '#bbcf4c'
   },
   3: {
     name: 'Lightly Polluted',
     implications: 'Healthy people may experience slight irritations and sensitive individuals will be slightly affected to a larger extent.',
     precautions: 'Children, seniors and individuals with respiratory or heart diseases should reduce sustained and high-intensity outdoor exercises.',
-    color: '#ff9800'
+    color: '#eec20b'
   },
   4: {
     name: 'Moderately Polluted',
     implications: 'Sensitive individuals will experience more serious conditions. The hearts and respiratory systems of healthy people may be affected.',
     precautions: 'Children, seniors and individuals with respiratory or heart diseases should avoid sustained and high-intensity outdoor exercises. General population should moderately reduce outdoor activities.',
-    color: '#f44336'
+    color: '#f29305'
   },
   5: {
     name: 'Heavily Polluted',
     implications: 'Healthy people will commonly show symptoms. People with respiratory or heart diseases will be significantly affected and will experience reduced endurance in activities.',
     precautions: 'Children, seniors and individuals with heart or lung diseases should stay indoors and avoid outdoor activities. General population should reduce outdoor activities.',
-    color: '#9c27b0'
+    color: '#e8416f'
   },
   6: {
     name: 'Severely Polluted',

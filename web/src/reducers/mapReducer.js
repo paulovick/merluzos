@@ -12,7 +12,10 @@ const INITIAL_STATE = {
 const mapReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {
     case ACTIONS.RequestRoutes:
-      return { ...state }
+      return {
+        ...state,
+        routes: []
+      }
     case ACTIONS.ReceiveRoutes:
       return { ...state, routes: action.payload }
     case ACTIONS.ConfirmFilter:
