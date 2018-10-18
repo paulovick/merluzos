@@ -45,10 +45,12 @@ export class MapContainer extends Component {
                      lat: 45.812236,
                      lng: 15.980941
                  }}>
+              <Marker name={'To'} position={{lat: 45.837375, lng: 16.025867}}/>
 
-                {
+              {
                     lines
                 }
+
             </Map>
         )
     }
