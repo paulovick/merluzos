@@ -74,3 +74,10 @@ export const changeToggle = (toggleName) => {
     payload: toggleName
   }
 }
+
+export const confirmFilter = (filter) => {
+  return {
+    type: ACTIONS.ConfirmFilter,
+    payload: filter
+  }
+}

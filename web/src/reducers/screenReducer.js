@@ -10,6 +10,8 @@ const screenReducer = (state = INITIAL_STATE, action) => {
       return { ...state, currentScreen: SCREENS.FiltersScreen }
     case ACTIONS.CloseFiltersScreen:
       return { ...state, currentScreen: SCREENS.MapScreen }
+    case ACTIONS.ConfirmFilter:
+      return { ...state, currentScreen: SCREENS.MapScreen }
     default:
       return state
   }

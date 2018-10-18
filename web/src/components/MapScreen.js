@@ -15,7 +15,7 @@ class MapScreen extends Component {
       fabContainerStyle,
       fabStyle
     } = style
-    console.log(COLORS)
+    
     return (
       <div>
         <MapContainer />

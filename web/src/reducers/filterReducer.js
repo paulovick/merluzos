@@ -35,10 +35,11 @@ const filterReducer = (state = INITIAL_STATE, action) => {
       result[action.payload.fieldName].isLoading = false
 
       const results = action.payload.results.map((result) => {
+        console.log(result)
         return {
           address: result.formatted_address,
-          latitude: result.geometry.location.latitude,
-          longitude: result.geometry.location.longitude,
+          latitude: result.geometry.location.lat,
+          longitude: result.geometry.location.lng,
           name: result.name
         }
       })
@@ -57,7 +58,7 @@ const filterReducer = (state = INITIAL_STATE, action) => {
         routeType: action.payload
       }
     case ACTIONS.ChangeToggle:
-      let result = {
+      var result = {
         ...state
       }
 

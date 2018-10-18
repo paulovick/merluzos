@@ -4,7 +4,14 @@ import { Button } from 'semantic-ui-react'
 import { CenteredContainer, CheckboxToggle } from './common'
 import { FilterInput } from './common'
 import { COLORS } from '../constants'
-import { fetchSearch, changeSearchInput, changeRouteType, changeToggle, closeFiltersScreen } from '../actions'
+import {
+  fetchSearch,
+  changeSearchInput,
+  changeRouteType,
+  changeToggle,
+  closeFiltersScreen,
+  confirmFilter
+} from '../actions'
 
 class FilterScreen extends Component {
   constructor(props) {
@@ -54,7 +61,20 @@ class FilterScreen extends Component {
   }
 
   onConfirmClick() {
-    
+    const filter = {
+      from: {
+        latitude: this.props.from.selectedValue.latitude,
+        longitude: this.props.from.selectedValue.longitude,
+      },
+      to: {
+        latitude: this.props.from.selectedValue.latitude,
+        longitude: this.props.from.selectedValue.longitude,
+      },
+      routeType: this.props.routeType,
+      eco: this.props.healthyChecked,
+      fast: this.props.fastChecked
+    }
+    this.props.confirmFilter(filter)
   }
 
   onBackClick() {
@@ -175,6 +195,7 @@ const styles = {
 
 const mapStateToProps = (state) => {
   const { filter } = state
+
   return {
     routeType: filter.routeType,
     from: {
@@ -200,7 +221,8 @@ const mapDispatchToProps = (dispatch) => {
     changeSearchInput: (fieldName, value) => dispatch(changeSearchInput(fieldName, value)),
     changeRouteType: (routeType) => dispatch(changeRouteType(routeType)),
     changeToggle: (toggleName) => dispatch(changeToggle(toggleName)),
-    closeFiltersScreen: () => dispatch(closeFiltersScreen())
+    closeFiltersScreen: () => dispatch(closeFiltersScreen()),
+    confirmFilter: (filter) => dispatch(confirmFilter(filter))
   }
 }
 

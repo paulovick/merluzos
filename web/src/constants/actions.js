@@ -9,7 +9,8 @@ const ACTIONS = {
   SelectSearch: 'SELECT_SEARCH',
   ChangeRouteType: 'CHANGE_ROUTE_TYPE',
   ChangeToggle: 'CHANGE_TOGGLE',
-  CloseFiltersScreen: 'CLOSE_FILTERS_SCREEN'
+  CloseFiltersScreen: 'CLOSE_FILTERS_SCREEN',
+  ConfirmFilter: 'CONFIRM_FILTER'
 }
 
 export { ACTIONS }

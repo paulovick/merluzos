@@ -6,15 +6,56 @@ import {fetchRoutes} from '../actions'
 import _ from 'lodash'
 
 export class MapContainer extends Component {
+  constructor(props) {
+    super(props)
+
+    this.isValidFormData = this.isValidFormData.bind(this)
+  }
+
   componentWillMount() {
     console.log("componentWillMount");
-    let from = new Point(45.811357, 15.974306);
-    let to = new Point(45.837375, 16.025867);
-    //let transport = 'bike';
-    let transport = 'foot';
-    let eco = true;
-    let fast = true;
-    this.props.dispatch(fetchRoutes(from, to, transport, eco, fast))
+    // let from = new Point(45.811357, 15.974306);
+    // let to = new Point(45.837375, 16.025867);
+    // //let transport = 'bike';
+    // let transport = 'foot';
+    // let eco = true;
+    // let fast = true;
+    // this.props.dispatch(fetchRoutes(from, to, transport, eco, fast))
+  }
+
+  isValidFormData(prevProps) {
+    const validProperties = this.props.from
+                        && this.props.to
+                        && this.props.routeType
+    if (!validProperties)
+      return false
+    
+    const validPrevProperties = prevProps.from
+                        && prevProps.to
+                        && prevProps.routeType
+    if (!validPrevProperties)
+      return true
+    
+    const result = this.props.from.latitude !== prevProps.from.latitude
+                  || this.props.from.longitude !== prevProps.from.longitude
+                  || this.props.to.longitude !== prevProps.to.longitude
+                  || this.props.to.latitude !== prevProps.to.latitude
+                  || this.props.routeType !== prevProps.routeType
+                  || this.props.eco !== prevProps.eco
+                  || this.props.fast !== prevProps.fast
+    
+    return result
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.isValidFormData(prevProps)) {
+      const from = new Point(this.props.from.latitude, this.props.from.longitude)
+      const to = new Point(this.props.to.latitude, this.props.to.longitude)
+      const transport = this.props.routeType
+      const eco = this.props.eco
+      const fast = this.props.fast
+      this.props.dispatch(fetchRoutes(from, to, transport, eco, fast))
+    }
   }
 
   colorByLevel(level) {
@@ -85,6 +126,11 @@ const mapsWrapper = GoogleApiWrapper({
 
 const mapStateToProps = (state) => {
   return {
+    from: state.map.from,
+    to: state.map.to,
+    routeType: state.map.routeType,
+    eco: state.map.eco,
+    fast: state.map.fast,
     routes: state.map.routes
   }
 }

@@ -1,6 +1,11 @@
 import { ACTIONS } from '../constants'
 
 const INITIAL_STATE = {
+  from: null,
+  to: null,
+  routeType: null,
+  eco: false,
+  fast: false,
   routes: []
 }
 
@@ -10,6 +15,15 @@ const mapReducer = (state = INITIAL_STATE, action) => {
       return { ...state }
     case ACTIONS.ReceiveRoutes:
       return { ...state, routes: action.payload }
+    case ACTIONS.ConfirmFilter:
+      return {
+        ...state,
+        from: action.payload.from,
+        to: action.payload.to,
+        routeType: action.payload.routeType,
+        eco: action.payload.eco,
+        fast: action.payload.fast
+      }
     default:
       return state
   }
