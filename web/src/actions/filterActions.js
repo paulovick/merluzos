@@ -1,5 +1,11 @@
 import { ACTIONS } from '../constants'
 
+export const closeFiltersScreen = () => {
+  return {
+    type: ACTIONS.CloseFiltersScreen
+  }
+}
+
 export const changeRouteType = (routeType) => {
   return {
     type: ACTIONS.ChangeRouteType,

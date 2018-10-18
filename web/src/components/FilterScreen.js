@@ -4,7 +4,7 @@ import { Button } from 'semantic-ui-react'
 import { CenteredContainer, CheckboxToggle } from './common'
 import { FilterInput } from './common'
 import { COLORS } from '../constants'
-import { fetchSearch, changeSearchInput, changeRouteType, changeToggle } from '../actions'
+import { fetchSearch, changeSearchInput, changeRouteType, changeToggle, closeFiltersScreen } from '../actions'
 
 class FilterScreen extends Component {
   constructor(props) {
@@ -52,7 +52,12 @@ class FilterScreen extends Component {
   }
 
   onConfirmClick() {
-    console.log(this.props)
+    console.log('confirm')
+  }
+
+  onBackClick() {
+    console.log('back')
+    this.props.closeFiltersScreen()
   }
 
   render() {
@@ -60,7 +65,9 @@ class FilterScreen extends Component {
       containerStyle,
       choiceButtonContainerStyle,
       choiceButtonStyle,
-      startButtonContainerStyle
+      startButtonContainerStyle,
+      backContainerStyle,
+      backStyle
     } = styles
     const {
       routeType,
@@ -70,12 +77,15 @@ class FilterScreen extends Component {
       fastChecked
     } = this.props
 
-    console.log(from.selectedValue)
-
     const walkBackgroundColor = routeType === 'foot' ? COLORS.Neutral : COLORS.Dark
     const bikeBackgroundColor = routeType === 'bike' ? COLORS.Neutral : COLORS.Dark
     return (
       <div style={containerStyle}>
+        <div style={backContainerStyle}>
+          <Button style={backStyle}
+                  circular icon="arrow left" color="google plus" size="huge"
+                  onClick={this.onBackClick.bind(this)} />  { /* TODO: Button back! */ }
+        </div>
         <CenteredContainer>
           <div>
             <Button.Group size="huge" style={choiceButtonContainerStyle}>
@@ -116,11 +126,9 @@ class FilterScreen extends Component {
                             value={fastChecked} />
           </div>
           <div style={startButtonContainerStyle}>
-              {/* <Button circular icon="arrow right" color="white" 
-                      size="huge" style={{boxShadow: '1px 3px 10px #888'}}/> */}
-              <Button circular disabled={!this.formValid()} icon="arrow right"
+              <Button circular disabled={!this.formValid()} icon="location arrow"
                       size="huge" style={{boxShadow: '1px 3px 10px #888'}}
-                      onClick={this.onConfirmClick.bind(this)}/>
+                      onClick={this.onConfirmClick.bind(this)} />
           </div>
         </CenteredContainer>
       </div>
@@ -150,6 +158,14 @@ const styles = {
     position: 'absolute',
     bottom: "7%",
     right: "15%"
+  },
+  backContainerStyle: {
+    position: 'absolute',
+    top: 20,
+    left: 20
+  },
+  backStyle: {
+    backgroundColor: 'rgba(0, 0, 0, 0)'
   }
 }
 
@@ -179,7 +195,8 @@ const mapDispatchToProps = (dispatch) => {
     fetchSearch: (fieldName, text) => dispatch(fetchSearch(fieldName, text)),
     changeSearchInput: (fieldName, value) => dispatch(changeSearchInput(fieldName, value)),
     changeRouteType: (routeType) => dispatch(changeRouteType(routeType)),
-    changeToggle: (toggleName) => dispatch(changeToggle(toggleName))
+    changeToggle: (toggleName) => dispatch(changeToggle(toggleName)),
+    closeFiltersScreen: () => dispatch(closeFiltersScreen())
   }
 }
 

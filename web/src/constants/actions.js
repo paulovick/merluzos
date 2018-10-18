@@ -8,7 +8,8 @@ const ACTIONS = {
   ReceiveSearch: 'RECEIVE_SEARCH',
   SelectSearch: 'SELECT_SEARCH',
   ChangeRouteType: 'CHANGE_ROUTE_TYPE',
-  ChangeToggle: 'CHANGE_TOGGLE'
+  ChangeToggle: 'CHANGE_TOGGLE',
+  CloseFiltersScreen: 'CLOSE_FILTERS_SCREEN'
 }
 
 export { ACTIONS }
