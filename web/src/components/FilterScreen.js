@@ -4,11 +4,16 @@ import { Button } from 'semantic-ui-react'
 import { CenteredContainer, CheckboxToggle } from './common'
 import { FilterInput } from './common'
 import { COLORS } from '../constants'
-import { fetchSearch } from '../actions'
+import { fetchSearch, changeSearchInput } from '../actions'
 
 class FilterScreen extends Component {
   onFromChange(e, { value }) {
     this.props.fetchSearch('from', value)
+  }
+
+  onFromResultSelect(e, { result }) {
+    console.log(result)
+    this.props.changeSearchInput('from', result)
   }
 
   render() {
@@ -22,6 +27,8 @@ class FilterScreen extends Component {
       from,
       to
     } = this.props
+
+    console.log(from.selectedValue)
 
     const walkBackgroundColor = COLORS.Dark
     const bikeBackgroundColor = COLORS.Neutral
@@ -42,6 +49,7 @@ class FilterScreen extends Component {
                        isLoading={from.isLoading}
                        results={from.results}
                        onTextChange={this.onFromChange.bind(this)}
+                       onResultSelect={this.onFromResultSelect.bind(this)}
                        value={from.value} />
 
           <FilterInput placeholder="To..." />
@@ -92,19 +100,22 @@ const mapStateToProps = (state) => {
     from: {
       isLoading: filter.from.isLoading,
       results: filter.from.results,
-      value: filter.from.value
+      value: filter.from.value,
+      selectedValue: filter.from.selectedValue
     },
     to: {
       isLoading: filter.to.isLoading,
       results: filter.to.results,
-      value: filter.to.value
+      value: filter.to.value,
+      selectedValue: filter.to.selectedValue
     }
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchSearch: (fieldName, text) => dispatch(fetchSearch(fieldName, text))
+    fetchSearch: (fieldName, text) => dispatch(fetchSearch(fieldName, text)),
+    changeSearchInput: (fieldName, value) => dispatch(changeSearchInput(fieldName, value))
   }
 }
 

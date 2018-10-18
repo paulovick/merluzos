@@ -1,5 +1,15 @@
 import { ACTIONS } from '../constants'
 
+export const changeSearchInput = (fieldName, value) => {
+  return {
+    type: ACTIONS.SelectSearch,
+    payload: {
+      fieldName,
+      value
+    }
+  }
+}
+
 export const requestSearch = (fieldName, value) => {
   return {
     type: ACTIONS.RequestSearch,
@@ -25,8 +35,6 @@ export const fetchSearch = (fieldName, text) => {
     dispatch(requestSearch(fieldName, text))
 
     const apiKey = 'AIzaSyCSX1Vis_20mfI2G0CI4fy_nWUeUTs1wOA'
-    //const inputType = 'textquery'
-    //const fields = 'formatted_address,name,geometry/location'
     fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?key=${apiKey}&query=${encodeURI(text)}`, {
       method: 'GET',
       mode: 'cors',
@@ -42,7 +50,6 @@ export const fetchSearch = (fieldName, text) => {
         }
       })
       .then(json => {
-        console.log(json)
         dispatch(receiveSearch(fieldName, json.results))
       })
   }
