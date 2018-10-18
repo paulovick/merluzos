@@ -1,19 +1,42 @@
-import React from 'react'
-import { Search } from 'semantic-ui-react'
+import React, { Component } from 'react'
+import { Search, SearchResult } from 'semantic-ui-react'
 
-const FilterInput = (props) => {
-  const { placeholder } = props
-  const { containerStyle, inputStyle } = styles
+class FilterInput extends Component {
+  renderResult({ address, name, latitude, longitude }) {
+    return (
+      <SearchResult title={name}
+                    key={`${address}`}
+                    description={address} />
+    )
+  }
 
-  return (
-    <div style={containerStyle}>
-      <Search style={inputStyle}
-              placeholder={placeholder}
-      
-      />
-    </div>
-  );
-};
+  render() {
+    const { containerStyle, inputStyle } = styles
+    const {
+      placeholder,
+      isLoading,
+      onResultSelect,
+      onTextChange,
+      results,
+      value
+    } = this.props
+
+    return (
+      <div style={containerStyle}>
+        <Search style={inputStyle}
+                placeholder={placeholder}
+                loading={isLoading}
+                onResultSelect={onResultSelect}
+                onSearchChange={onTextChange}
+                results={results}
+                value={value}
+                resultRenderer={this.renderResult.bind(this)}
+        >
+        </Search>
+      </div>
+    )
+  }
+}
 
 const styles = {
   containerStyle: {
