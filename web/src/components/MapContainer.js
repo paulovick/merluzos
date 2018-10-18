@@ -13,6 +13,11 @@ export class MapContainer extends Component {
         this.props.dispatch(fetchRoutes(from, to, transport))
     }
 
+    colorByLevel(level) {
+      const colors = ['green', 'yellow', 'orange', 'red', '#540099', '#800000'];
+      return colors[level-1];
+    }
+
     render() {
         const {routes} = this.props
         console.log(routes);
@@ -24,7 +29,7 @@ export class MapContainer extends Component {
                     return (
                         <Polyline key={`line_${i}`}
                                   path={s.points}
-                                  strokeColor={route.eco ? 'green' : 'red'}
+                                  strokeColor={this.colorByLevel(s.level)}
                                   strokeOpacity={0.8}
                                   strokeWeight={4}/>
                     )
