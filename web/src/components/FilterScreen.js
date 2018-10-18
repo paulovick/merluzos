@@ -11,6 +11,7 @@ class FilterScreen extends Component {
     super(props)
 
     this.onRouteTypeChanged.bind(this)
+    this.formValid.bind(this)
   }
 
   onRouteTypeChanged(routeType) {
@@ -39,6 +40,19 @@ class FilterScreen extends Component {
 
   onFastToggleClick() {
     this.props.changeToggle('fast')
+  }
+
+  formValid() {
+    var result = (this.props.fastChecked || this.props.healthyChecked)
+              && this.props.routeType
+              && this.props.from.selectedValue !== null
+              && this.props.to.selectedValue !== null
+    
+    return result
+  }
+
+  onConfirmClick() {
+    console.log(this.props)
   }
 
   render() {
@@ -102,10 +116,11 @@ class FilterScreen extends Component {
                             value={fastChecked} />
           </div>
           <div style={startButtonContainerStyle}>
-              <Button circular icon="arrow right" color="white" 
-                      size="huge" style={{boxShadow: '1px 3px 10px #888'}}/>
-              {/* <Button circular disabled icon="arrow right"
+              {/* <Button circular icon="arrow right" color="white" 
                       size="huge" style={{boxShadow: '1px 3px 10px #888'}}/> */}
+              <Button circular disabled={!this.formValid()} icon="arrow right"
+                      size="huge" style={{boxShadow: '1px 3px 10px #888'}}
+                      onClick={this.onConfirmClick.bind(this)}/>
           </div>
         </CenteredContainer>
       </div>
