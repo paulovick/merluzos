@@ -28,6 +28,7 @@ class Route {
         this.distance = routeJson.distance;
         this.points = this.buildPoints(routeJson.route);
         this.segments = [new Segment(this.points, 1)];
+        this.airQualityLevelMax = 1;
     }
 
     buildPoints(route) {

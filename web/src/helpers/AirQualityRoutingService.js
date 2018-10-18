@@ -9,7 +9,8 @@ class AirQualityRoutingService {
           return new AirQualityService().getPoints(route.points).then(pointsWithAirQuality => {
               console.log('addAirQualityInfo');
               route.segments = this.buildSegmentsByAQ(pointsWithAirQuality);
-              return route;
+              route.airQualityLevelMax = _.maxBy(route.segments, 'level');
+            return route;
             }
           ).catch(err => console.error(err));
         });
@@ -38,21 +39,21 @@ class AirQualityRoutingService {
                 segment.addPoint(p2);
             }
         }
-        return segments;
+      return segments;
     }
 
     static computeLevel(p1, p2) {
         let avgValue = (p1.NO2_AQI + p2.NO2_AQI) / 2;
-        if (avgValue <= 50) {
+        if (avgValue <= 25) {
             return 1;
-        } else if (avgValue <= 100) {
+        } else if (avgValue <= 50) {
             return 2;
-        } else if (avgValue <= 150) {
+        } else if (avgValue <= 75) {
             return 3;
-        } else if (avgValue <= 200) {
+        } else if (avgValue <= 100) {
             return 4;
-        } else if (avgValue <= 300) {
-            return 5;
+        } else if (avgValue <= 125) {
+          return 4;
         } else {
             return 6;
         }
