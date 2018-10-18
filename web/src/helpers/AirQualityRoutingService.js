@@ -1,25 +1,19 @@
 import {AirQualityService, Segment} from "./RoutingService";
+import _ from 'lodash'
 
 class AirQualityRoutingService {
 
     addAirQualityInfo(routes) {
-        let route = routes[0];
-        return new AirQualityService().getPoints(route.points).then(pointsWithAirQuality => {
-                console.log(pointsWithAirQuality);
-                route.segments = this.buildSegmentsByAQ(pointsWithAirQuality);
-                return [route];
+
+        let promises = _.map(routes, (route) => {
+          return new AirQualityService().getPoints(route.points).then(pointsWithAirQuality => {
+              route.segments = this.buildSegmentsByAQ(pointsWithAirQuality);
+              return route;
             }
-        );
+          );
+        });
 
-
-        // routes.forEach(function (route) {
-        //     let transformedPoints = route.points.map((point) => {
-        //         return {latitude: point.lat, longitude: point.lng }
-        //     });
-        //     new AirQualityService().getPoints(transformedPoints);
-        // })
-
-        // return routesWithSegmentByAQ
+        return Promise.all(promises);
     }
 
     buildSegmentsByAQ(pointsWithAirQuality) {

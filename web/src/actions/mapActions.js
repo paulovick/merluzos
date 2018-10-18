@@ -29,6 +29,7 @@ export const fetchRoutes = (from, to, transport) => {
             .then(routes => {
                 const airQualityRoutingService = new AirQualityRoutingService();
                 airQualityRoutingService.addAirQualityInfo(routes).then(updatedRoutes => {
+                        console.log(updatedRoutes);
                         dispatch(receiveRoutes(updatedRoutes));
                     }
                 );
