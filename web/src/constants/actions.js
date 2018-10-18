@@ -6,7 +6,9 @@ const ACTIONS = {
 
   RequestSearch: 'REQUEST_SEARCH',
   ReceiveSearch: 'RECEIVE_SEARCH',
-  SelectSearch: 'SELECT_SEARCH'
+  SelectSearch: 'SELECT_SEARCH',
+  ChangeRouteType: 'CHANGE_ROUTE_TYPE',
+  ChangeToggle: 'CHANGE_TOGGLE'
 }
 
 export { ACTIONS }

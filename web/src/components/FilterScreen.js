@@ -4,15 +4,24 @@ import { Button } from 'semantic-ui-react'
 import { CenteredContainer, CheckboxToggle } from './common'
 import { FilterInput } from './common'
 import { COLORS } from '../constants'
-import { fetchSearch, changeSearchInput } from '../actions'
+import { fetchSearch, changeSearchInput, changeRouteType, changeToggle } from '../actions'
 
 class FilterScreen extends Component {
+  constructor(props) {
+    super(props)
+
+    this.onRouteTypeChanged.bind(this)
+  }
+
+  onRouteTypeChanged(routeType) {
+    this.props.changeRouteType(routeType)
+  }
+
   onFromChange(e, { value }) {
     this.props.fetchSearch('from', value)
   }
 
   onFromResultSelect(e, { result }) {
-    console.log(result)
     this.props.changeSearchInput('from', result)
   }
 
@@ -21,8 +30,15 @@ class FilterScreen extends Component {
   }
 
   onToResultSelect(e, { result }) {
-    console.log(result)
     this.props.changeSearchInput('to', result)
+  }
+
+  onHealthyToggleClick() {
+    this.props.changeToggle('eco')
+  }
+
+  onFastToggleClick() {
+    this.props.changeToggle('fast')
   }
 
   render() {
@@ -33,24 +49,29 @@ class FilterScreen extends Component {
       startButtonContainerStyle
     } = styles
     const {
+      routeType,
       from,
-      to
+      to,
+      healthyChecked,
+      fastChecked
     } = this.props
 
     console.log(from.selectedValue)
 
-    const walkBackgroundColor = COLORS.Dark
-    const bikeBackgroundColor = COLORS.Neutral
+    const walkBackgroundColor = routeType === 'foot' ? COLORS.Neutral : COLORS.Dark
+    const bikeBackgroundColor = routeType === 'bike' ? COLORS.Neutral : COLORS.Dark
     return (
       <div style={containerStyle}>
         <CenteredContainer>
           <div>
             <Button.Group size="huge" style={choiceButtonContainerStyle}>
               <Button style={{...choiceButtonStyle, backgroundColor: walkBackgroundColor}}
-                      icon="male"/>
+                      icon="male"
+                      onClick={() => this.onRouteTypeChanged('foot')}/>
               <Button.Or />
               <Button style={{...choiceButtonStyle, backgroundColor: bikeBackgroundColor}}
-                      icon="bicycle"/>
+                      icon="bicycle"
+                      onClick={() => this.onRouteTypeChanged('bike')}/>
             </Button.Group>
           </div>
 
@@ -69,10 +90,14 @@ class FilterScreen extends Component {
                        value={to.value} />
 
           <div>
-            <CheckboxToggle label="Healthy route"></CheckboxToggle>
+            <CheckboxToggle label="Healthy route"
+                            onClick={this.onHealthyToggleClick.bind(this)}
+                            value={healthyChecked} />
           </div>
           <div>
-            <CheckboxToggle label="Fast route"></CheckboxToggle>
+            <CheckboxToggle label="Fast route"
+                            onClick={this.onFastToggleClick.bind(this)}
+                            value={fastChecked} />
           </div>
           <div style={startButtonContainerStyle}>
               <Button circular icon="arrow right" color="white" 
@@ -114,6 +139,7 @@ const styles = {
 const mapStateToProps = (state) => {
   const { filter } = state
   return {
+    routeType: filter.routeType,
     from: {
       isLoading: filter.from.isLoading,
       results: filter.from.results,
@@ -125,14 +151,18 @@ const mapStateToProps = (state) => {
       results: filter.to.results,
       value: filter.to.value,
       selectedValue: filter.to.selectedValue
-    }
+    },
+    healthyChecked: filter.healthyChecked,
+    fastChecked: filter.fastChecked
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
     fetchSearch: (fieldName, text) => dispatch(fetchSearch(fieldName, text)),
-    changeSearchInput: (fieldName, value) => dispatch(changeSearchInput(fieldName, value))
+    changeSearchInput: (fieldName, value) => dispatch(changeSearchInput(fieldName, value)),
+    changeRouteType: (routeType) => dispatch(changeRouteType(routeType)),
+    changeToggle: (toggleName) => dispatch(changeToggle(toggleName))
   }
 }
 

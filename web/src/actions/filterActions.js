@@ -1,5 +1,12 @@
 import { ACTIONS } from '../constants'
 
+export const changeRouteType = (routeType) => {
+  return {
+    type: ACTIONS.ChangeRouteType,
+    payload: routeType
+  }
+}
+
 export const changeSearchInput = (fieldName, value) => {
   return {
     type: ACTIONS.SelectSearch,
@@ -52,5 +59,12 @@ export const fetchSearch = (fieldName, text) => {
       .then(json => {
         dispatch(receiveSearch(fieldName, json.results))
       })
+  }
+}
+
+export const changeToggle = (toggleName) => {
+  return {
+    type: ACTIONS.ChangeToggle,
+    payload: toggleName
   }
 }

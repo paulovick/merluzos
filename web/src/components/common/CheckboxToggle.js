@@ -1,9 +1,8 @@
 import React from 'react'
 import { Checkbox } from 'semantic-ui-react'
 
-const CheckboxToggle = (props) =>{
-    const { label } = props
-    const { checkboxStyle, labelStyle, containerStyle } = styles
+const CheckboxToggle = ({ label, onClick, value }) =>{
+    const { labelStyle, containerStyle } = styles
 
     return(
         <div style={containerStyle}>
@@ -16,7 +15,8 @@ const CheckboxToggle = (props) =>{
                             </label>
                         </td>
                         <td style={{ width: '20%'}}>
-                            <Checkbox toggle/>
+                            <Checkbox toggle onClick={onClick}
+                                      checked={value} />
                         </td>
                     </tr>
                 </tbody>
@@ -25,19 +25,8 @@ const CheckboxToggle = (props) =>{
     )
 } 
 
-
-// <div style={containerStyle}>
-// <label style={labelStyle}>
-//     { label }
-// </label>
-//     <Checkbox toggle style={checkboxStyle}/>
-// </div>
-
 const styles = {
-    checkboxStyle: {
-    },
     labelStyle: {
-        /* paddingRight: "30%" */
         position: "absolute",
         left: "0px",
         top: "0px",

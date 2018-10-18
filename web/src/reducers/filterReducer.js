@@ -1,6 +1,7 @@
 import { ACTIONS } from '../constants'
 
 const INITIAL_STATE = {
+  routeType: 'foot',
   from: {
     isLoading: false,
     results: [],
@@ -12,7 +13,9 @@ const INITIAL_STATE = {
     results: [],
     value: '',
     selectedValue: null
-  }
+  },
+  healthyChecked: true,
+  fastChecked: true
 }
 
 const filterReducer = (state = INITIAL_STATE, action) => {
@@ -47,6 +50,22 @@ const filterReducer = (state = INITIAL_STATE, action) => {
       }
       result[action.payload.fieldName].selectedValue = action.payload.value
       result[action.payload.fieldName].value = action.payload.value.address
+      return result
+    case ACTIONS.ChangeRouteType:
+      return {
+        ...state,
+        routeType: action.payload
+      }
+    case ACTIONS.ChangeToggle:
+      let result = {
+        ...state
+      }
+
+      if (action.payload === 'eco')
+        result.healthyChecked = !state.healthyChecked
+      else if (action.payload === 'fast')
+        result.fastChecked = !state.fastChecked
+
       return result
     default:
       return state
