@@ -22,6 +22,12 @@ export const receiveRoutes = (routes) => {
   }
 }
 
+export const receiveAirQuality = () => {
+  return {
+    type: ACTIONS.AirReceived
+  }
+}
+
 export const fetchRoutes = (from, to, transport, eco, fast) => {
   return (dispatch) => {
     dispatch(requestRoutes());
@@ -34,8 +40,11 @@ export const fetchRoutes = (from, to, transport, eco, fast) => {
       .then(routes => {
         const airQualityRoutingService = new AirQualityRoutingService();
         airQualityRoutingService.addAirQualityInfo(routes).then(updatedRoutes => {
+            console.log(routes)
+
             console.log(updatedRoutes);
             dispatch(receiveRoutes(updatedRoutes));
+            dispatch(receiveAirQuality())
           }
         );
         return dispatch(receiveRoutes(routes))

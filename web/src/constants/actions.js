@@ -10,7 +10,8 @@ const ACTIONS = {
   ChangeRouteType: 'CHANGE_ROUTE_TYPE',
   ChangeToggle: 'CHANGE_TOGGLE',
   CloseFiltersScreen: 'CLOSE_FILTERS_SCREEN',
-  ConfirmFilter: 'CONFIRM_FILTER'
+  ConfirmFilter: 'CONFIRM_FILTER',
+  AirReceived: 'AIR_RECEIVED'
 }
 
 export { ACTIONS }
