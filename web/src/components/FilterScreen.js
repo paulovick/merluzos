@@ -16,6 +16,15 @@ class FilterScreen extends Component {
     this.props.changeSearchInput('from', result)
   }
 
+  onToChange(e, { value }) {
+    this.props.fetchSearch('to', value)
+  }
+
+  onToResultSelect(e, { result }) {
+    console.log(result)
+    this.props.changeSearchInput('to', result)
+  }
+
   render() {
     const {
       containerStyle,
@@ -52,7 +61,12 @@ class FilterScreen extends Component {
                        onResultSelect={this.onFromResultSelect.bind(this)}
                        value={from.value} />
 
-          <FilterInput placeholder="To..." />
+          <FilterInput placeholder="To..."
+                       isLoading={to.isLoading}
+                       results={to.results}
+                       onTextChange={this.onToChange.bind(this)}
+                       onResultSelect={this.onToResultSelect.bind(this)}
+                       value={to.value} />
 
           <div>
             <CheckboxToggle label="Healthy route"></CheckboxToggle>
