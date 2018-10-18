@@ -7,10 +7,14 @@ import _ from 'lodash'
 
 export class MapContainer extends Component {
     componentWillMount() {
-        let from = new Point(45.811357, 15.974306)
-        let to = new Point(45.837375, 16.025867)
-        let transport = 'foot'
-        this.props.dispatch(fetchRoutes(from, to, transport))
+      console.log("componentWillMount");
+        let from = new Point(45.811357, 15.974306);
+        let to = new Point(45.837375, 16.025867);
+        //let transport = 'bike';
+        let transport = 'foot';
+        let eco = true;
+        let fast = true;
+        this.props.dispatch(fetchRoutes(from, to, transport, eco, fast))
     }
 
     colorByLevel(level) {
@@ -20,7 +24,6 @@ export class MapContainer extends Component {
 
     render() {
         const {routes} = this.props
-        console.log(routes);
         let i = 0;
         let lines = _.flatten(
             _.map(routes, (route) => {
