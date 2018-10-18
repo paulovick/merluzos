@@ -12,6 +12,8 @@ class FilterScreen extends Component {
 
     this.onRouteTypeChanged.bind(this)
     this.formValid.bind(this)
+    this.onConfirmClick.bind(this)
+    this.onBackClick.bind(this)
   }
 
   onRouteTypeChanged(routeType) {
@@ -52,11 +54,10 @@ class FilterScreen extends Component {
   }
 
   onConfirmClick() {
-    console.log('confirm')
+    
   }
 
   onBackClick() {
-    console.log('back')
     this.props.closeFiltersScreen()
   }
 
@@ -84,7 +85,7 @@ class FilterScreen extends Component {
         <div style={backContainerStyle}>
           <Button style={backStyle}
                   circular icon="arrow left" color="google plus" size="huge"
-                  onClick={this.onBackClick.bind(this)} />  { /* TODO: Button back! */ }
+                  onClick={() => this.onBackClick()} />
         </div>
         <CenteredContainer>
           <div>
@@ -128,7 +129,7 @@ class FilterScreen extends Component {
           <div style={startButtonContainerStyle}>
               <Button circular disabled={!this.formValid()} icon="location arrow"
                       size="huge" style={{boxShadow: '1px 3px 10px #888'}}
-                      onClick={this.onConfirmClick.bind(this)} />
+                      onClick={() => this.onConfirmClick()} />
           </div>
         </CenteredContainer>
       </div>
@@ -143,6 +144,7 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
+    zIndex: 100,
     backgroundColor: COLORS.Dark
   },
   choiceButtonContainerStyle: {
@@ -156,13 +158,15 @@ const styles = {
   },
   startButtonContainerStyle: {
     position: 'absolute',
-    bottom: "7%",
-    right: "15%"
+    bottom: 20,
+    right: 20,
+    zIndex: 1000
   },
   backContainerStyle: {
     position: 'absolute',
     top: 20,
-    left: 20
+    left: 20,
+    zIndex: 1000
   },
   backStyle: {
     backgroundColor: 'rgba(0, 0, 0, 0)'
