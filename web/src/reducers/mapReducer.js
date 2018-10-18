@@ -16,6 +16,7 @@ const mapReducer = (state = INITIAL_STATE, action) => {
     case ACTIONS.ReceiveRoutes:
       return { ...state, routes: action.payload }
     case ACTIONS.ConfirmFilter:
+      console.log(action.payload)
       return {
         ...state,
         from: action.payload.from,
