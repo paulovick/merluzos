@@ -61,7 +61,10 @@ class FilterScreen extends Component {
             <CheckboxToggle label="Fast route"></CheckboxToggle>
           </div>
           <div style={startButtonContainerStyle}>
-              <Button disabled style={{boxShadow: '1px 3px 10px #888'}}>Start</Button>
+              <Button circular icon="arrow right" color="white" 
+                      size="huge" style={{boxShadow: '1px 3px 10px #888'}}/>
+              {/* <Button circular disabled icon="arrow right"
+                      size="huge" style={{boxShadow: '1px 3px 10px #888'}}/> */}
           </div>
         </CenteredContainer>
       </div>
