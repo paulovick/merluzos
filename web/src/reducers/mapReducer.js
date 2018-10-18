@@ -13,8 +13,7 @@ const mapReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {
     case ACTIONS.RequestRoutes:
       return {
-        ...state,
-        routes: []
+        ...INITIAL_STATE
       }
     case ACTIONS.ReceiveRoutes:
       return { ...state, routes: action.payload }
