@@ -1,39 +1,44 @@
 import {ACTIONS} from '../constants'
 import {RoutingService} from '../helpers/RoutingService'
 import {AirQualityRoutingService} from "../helpers/AirQualityRoutingService";
+import _ from 'lodash'
 
 export const openFiltersScreen = () => {
-    return {
-        type: ACTIONS.OpenFiltersScreen
-    }
+  return {
+    type: ACTIONS.OpenFiltersScreen
+  }
 }
 
 export const requestRoutes = () => {
-    return {
-        type: ACTIONS.RequestRoutes
-    }
+  return {
+    type: ACTIONS.RequestRoutes
+  }
 }
 
 export const receiveRoutes = (routes) => {
-    return {
-        type: ACTIONS.ReceiveRoutes,
-        payload: routes
-    }
+  return {
+    type: ACTIONS.ReceiveRoutes,
+    payload: routes
+  }
 }
 
-export const fetchRoutes = (from, to, transport) => {
-    return (dispatch) => {
-        dispatch(requestRoutes());
-        const routingService = new RoutingService();
-        return routingService.getRoutes(from, to, transport)
-            .then(routes => {
-                const airQualityRoutingService = new AirQualityRoutingService();
-                airQualityRoutingService.addAirQualityInfo(routes).then(updatedRoutes => {
-                        console.log(updatedRoutes);
-                        dispatch(receiveRoutes(updatedRoutes));
-                    }
-                );
-                return dispatch(receiveRoutes(routes))
-            })
-    }
+export const fetchRoutes = (from, to, transport, eco, fast) => {
+  return (dispatch) => {
+    dispatch(requestRoutes());
+    const routingService = new RoutingService();
+    return routingService.getRoutes(from, to, transport)
+      .then(routes => {
+        if (eco && fast) return routes;
+        else return _.filter(routes, ['eco', eco]);
+      })
+      .then(routes => {
+        const airQualityRoutingService = new AirQualityRoutingService();
+        airQualityRoutingService.addAirQualityInfo(routes).then(updatedRoutes => {
+            console.log(updatedRoutes);
+            dispatch(receiveRoutes(updatedRoutes));
+          }
+        );
+        return dispatch(receiveRoutes(routes))
+      })
+  }
 }

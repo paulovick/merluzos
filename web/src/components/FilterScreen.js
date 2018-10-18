@@ -89,6 +89,8 @@ class FilterScreen extends Component {
                        onResultSelect={this.onToResultSelect.bind(this)}
                        value={to.value} />
 
+          <div  style={{marginBottom: "3em"}}></div>
+
           <div>
             <CheckboxToggle label="Healthy route"
                             onClick={this.onHealthyToggleClick.bind(this)}
