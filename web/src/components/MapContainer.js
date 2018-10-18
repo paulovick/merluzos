@@ -155,7 +155,13 @@ export class MapContainer extends Component {
     return (
       <Map google={this.props.google}
            initialCenter={mapCenter}
-           onReady={this.onMapReady}>
+           onReady={this.onMapReady}
+           rotateControl={false}
+           fullscreenControl={false}
+           streetViewControl={false}
+           zoomControl={false}
+           mapTypeControl={false}
+      >
         {/* <Marker name={'To'} position={{lat: 45.837375, lng: 16.025867}}/>
         <InfoWindow
           visible={true}
