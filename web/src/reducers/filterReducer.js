@@ -49,7 +49,14 @@ const filterReducer = (state = INITIAL_STATE, action) => {
       var result = {
         ...state
       }
-      result[action.payload.fieldName].selectedValue = action.payload.value
+      console.log(action.payload.value)
+      result[action.payload.fieldName].selectedValue = {
+        address: action.payload.value.address,
+        name: action.payload.value.name,
+        latitude: action.payload.value.latitude(),
+        longitude: action.payload.value.longitude()
+      }
+      console.log(result[action.payload.fieldName].selectedValue)
       result[action.payload.fieldName].value = action.payload.value.address
       return result
     case ACTIONS.ChangeRouteType:

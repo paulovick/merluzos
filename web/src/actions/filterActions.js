@@ -47,24 +47,14 @@ export const fetchSearch = (fieldName, text) => {
   return (dispatch) => {
     dispatch(requestSearch(fieldName, text))
 
-    const apiKey = 'AIzaSyCSX1Vis_20mfI2G0CI4fy_nWUeUTs1wOA'
-    fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?key=${apiKey}&query=${encodeURI(text)}`, {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Credentials':true,
-        'Access-Control-Allow-Methods':'POST, GET'
-      }
+    const request = {
+      query: text
+    }
+
+    window.placesService.textSearch(request, (results, status) => {
+      if (status === 'OK')
+        dispatch(receiveSearch(fieldName, results))
     })
-      .then(response => {
-        if (response.ok) {
-          return response.json()
-        }
-      })
-      .then(json => {
-        dispatch(receiveSearch(fieldName, json.results))
-      })
   }
 }
 

@@ -67,8 +67,8 @@ class FilterScreen extends Component {
         longitude: this.props.from.selectedValue.longitude,
       },
       to: {
-        latitude: this.props.from.selectedValue.latitude,
-        longitude: this.props.from.selectedValue.longitude,
+        latitude: this.props.to.selectedValue.latitude,
+        longitude: this.props.to.selectedValue.longitude,
       },
       routeType: this.props.routeType,
       eco: this.props.healthyChecked,

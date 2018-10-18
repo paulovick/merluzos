@@ -12,6 +12,7 @@ export class MapContainer extends Component {
     super(props)
 
     this.isValidFormData = this.isValidFormData.bind(this)
+    this.onMapReady = this.onMapReady.bind(this)
   }
 
   componentWillMount() {
@@ -26,15 +27,15 @@ export class MapContainer extends Component {
   }
 
   isValidFormData(prevProps) {
-    const validProperties = this.props.from
-                        && this.props.to
-                        && this.props.routeType
+    const validProperties = this.props.from !== null
+                        && this.props.to !== null
+                        && this.props.routeType !== null
     if (!validProperties)
       return false
     
-    const validPrevProperties = prevProps.from
-                        && prevProps.to
-                        && prevProps.routeType
+    const validPrevProperties = prevProps.from !== null
+                        && prevProps.to !== null
+                        && prevProps.routeType !== null
     if (!validPrevProperties)
       return true
     
@@ -70,6 +71,11 @@ export class MapContainer extends Component {
     let lat = e.latLng.lat();
     let lng = e.latLng.lng();
     console.log(props.level);
+  }
+
+  onMapReady(mapProps, map) {
+    const { google } = mapProps
+    window.placesService = new google.maps.places.PlacesService(map)
   }
 
   render() {
@@ -115,11 +121,11 @@ export class MapContainer extends Component {
       }));
     return (
       <Map google={this.props.google}
-           onClick={this.onMapClicked}
            initialCenter={{
              lat: 45.812236,
              lng: 15.980941
-           }}>
+           }}
+           onReady={this.onMapReady}>
         <Marker name={'To'} position={{lat: 45.837375, lng: 16.025867}}/>
         <InfoWindow
           visible={true}
