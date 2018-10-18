@@ -13,6 +13,7 @@ export class MapContainer extends Component {
 
     this.isValidFormData = this.isValidFormData.bind(this)
     this.onMapReady = this.onMapReady.bind(this)
+    this.getMapCenter = this.getMapCenter.bind(this)
   }
 
   componentWillMount() {
@@ -78,8 +79,34 @@ export class MapContainer extends Component {
     window.placesService = new google.maps.places.PlacesService(map)
   }
 
+  getMapCenter() {
+    const { from, to } = this.props
+    if (from === null || to === null)
+      return {
+        lat: 45.812236,
+        lng: 15.980941
+      }
+    
+    const lat = from.latitude > to.latitude
+                ? from.latitude - ((from.latitude - to.latitude) / 2)
+                : to.latitude - ((to.latitude - from.latitude) / 2)
+    const lng = from.longitude > to.longitude
+                ? from.longitude - ((from.longitude - to.longitude) / 2)
+                : to.longitude - ((to.longitude - from.longitude) / 2)
+
+    return {
+      lat,
+      lng
+    }
+  }
+
   render() {
-    const {routes} = this.props
+    const {
+      routes,
+      from,
+      to
+    } = this.props
+
     let i = 0;
     const lineSymbol = {
       path: 'M 0,-1 0,1',
@@ -113,25 +140,38 @@ export class MapContainer extends Component {
                         strokeColor={this.colorByLevel(s.level)}
                         strokeOpacity={0.8}
                         strokeWeight={4}
+                        onClick={this.clickPolyline}
+                        level={s.level}
               />
             )
           }
 
         });
       }));
+
+    const mapCenter = this.getMapCenter()
+
     return (
       <Map google={this.props.google}
-           initialCenter={{
-             lat: 45.812236,
-             lng: 15.980941
-           }}
+           initialCenter={mapCenter}
            onReady={this.onMapReady}>
-        <Marker name={'To'} position={{lat: 45.837375, lng: 16.025867}}/>
+        {/* <Marker name={'To'} position={{lat: 45.837375, lng: 16.025867}}/>
         <InfoWindow
           visible={true}
           position={{lat: 45.837375, lng: 16.025867}}>
           <PopUp></PopUp>
-        </InfoWindow>
+        </InfoWindow> */}
+
+        {
+          to !== null &&
+          <Marker name={'To'}
+                  position={{
+                    lat: to.latitude,
+                    lng: to.longitude
+                  }}
+          /> 
+        }
+
         {
           lines
         }
